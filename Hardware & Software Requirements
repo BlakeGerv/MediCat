@@ -1,0 +1,17 @@
+Hardware:
+Raspberry Pi 3 Model B+
+ - Justification: Main computer for running and processing
+ - Availability: In class
+
+Raspberry Pi Camera Module V2
+ - Justification: Will be used for navigation and possibly gesture recognition
+ - Availability: In class
+
+Robot Kit
+ - Justification: Body of the robot
+ - Availability: In class
+
+
+Software:
+Visual Studio Code
+ - C# + Required Libraries and Add-Ons
