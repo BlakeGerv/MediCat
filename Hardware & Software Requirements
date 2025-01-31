@@ -7,8 +7,20 @@ Raspberry Pi Camera Module V2
  - Justification: Will be used for navigation and possibly gesture recognition
  - Availability: In class
 
-Robot Kit
- - Justification: Body of the robot
+Cat Robot Kit
+ - Justification: The body of the robot
+ - Availability: In class
+
+Weight Sensor
+ - Justification: Used to check if pill(s) has been taken.
+ - Availability: Will be in class
+
+Pill Bottles
+ - Justification: Needed for pill sensor
+ - Availability: Need to ask for it
+
+LEDs
+ - Justification: To use with the pill sensor to show if pills have been taken
  - Availability: In class
 
 
