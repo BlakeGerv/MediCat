@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brayden\\source\\repos\\MediCat\\MediCatApp\\MediCatApp.csproj": {}
+    "C:\\Users\\Brayden\\Source\\Repos\\MediCat\\MediCatApp\\MediCatApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brayden\\source\\repos\\MediCat\\MediCatApp\\MediCatApp.csproj": {
+    "C:\\Users\\Brayden\\Source\\Repos\\MediCat\\MediCatApp\\MediCatApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brayden\\source\\repos\\MediCat\\MediCatApp\\MediCatApp.csproj",
+        "projectUniqueName": "C:\\Users\\Brayden\\Source\\Repos\\MediCat\\MediCatApp\\MediCatApp.csproj",
         "projectName": "MediCatApp",
-        "projectPath": "C:\\Users\\Brayden\\source\\repos\\MediCat\\MediCatApp\\MediCatApp.csproj",
+        "projectPath": "C:\\Users\\Brayden\\Source\\Repos\\MediCat\\MediCatApp\\MediCatApp.csproj",
         "packagesPath": "C:\\Users\\Brayden\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brayden\\source\\repos\\MediCat\\MediCatApp\\obj\\",
+        "outputPath": "C:\\Users\\Brayden\\Source\\Repos\\MediCat\\MediCatApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

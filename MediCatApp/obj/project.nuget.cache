@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "amZGm62rn80=",
+  "dgSpecHash": "qp9VddmL9sE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Brayden\\source\\repos\\MediCat\\MediCatApp\\MediCatApp.csproj",
+  "projectFilePath": "C:\\Users\\Brayden\\Source\\Repos\\MediCat\\MediCatApp\\MediCatApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Brayden\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Brayden\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

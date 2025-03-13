@@ -1,1 +1,1 @@
-C:\Users\Brayden\source\repos\MediCatApp\MediCatApp\MediCatApp.csproj;x64
+C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\MediCatApp.csproj;x64
