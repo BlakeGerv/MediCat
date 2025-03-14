@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediCatApp.Views.SignUpPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="medicat_full_logo.png"
+                WidthRequest="280"
+                Aspect="AspectFit"
+                SemanticProperties.Description="MediCat">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnImageTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label
+                Text="Sign Up Page"
+                Style="{StaticResource Headline}"
+                FontAttributes="Bold"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button x:Name="SignUpBtn"
+                Text="Sign Up"
+                BackgroundColor="LightSteelBlue"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="30"
+                FontFamily="Verdana"
+                HeightRequest="60"
+                WidthRequest="225"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

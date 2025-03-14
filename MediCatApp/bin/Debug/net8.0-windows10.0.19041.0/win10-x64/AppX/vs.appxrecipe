@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-03-13T19:15:09.892</Modified>
+      <Modified>2025-03-14T18:08:12.163</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-03-13T19:15:09.421</Modified>
+      <Modified>2025-03-14T17:01:59.207</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MediCatApp.runtimeconfig.json">
       <PackagePath>MediCatApp.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MediCatApp.dll">
       <PackagePath>MediCatApp.dll</PackagePath>
-      <Modified>2025-03-13T19:15:06.052</Modified>
+      <Modified>2025-03-14T18:08:09.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MediCatApp.exe</PackagePath>
-      <Modified>2025-03-13T19:15:06.251</Modified>
+      <Modified>2025-03-14T18:08:09.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -296,7 +296,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MediCatApp.deps.json">
       <PackagePath>MediCatApp.deps.json</PackagePath>
-      <Modified>2025-03-13T19:15:08.663</Modified>
+      <Modified>2025-03-14T17:01:58.852</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
