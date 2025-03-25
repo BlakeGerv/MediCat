@@ -11,14 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.medicatapp")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "MediCatApp")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediCatApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9abf613ad81ff5c3daf1c5f00c0b86b27078434d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a06d882ff54265772ddeb5bfab217f6bc46e04aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediCatApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediCatApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
