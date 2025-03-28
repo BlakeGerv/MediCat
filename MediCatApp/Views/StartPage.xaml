@@ -5,23 +5,24 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+            Margin="45"
+            Spacing="15">
             <Image
                 Source="medicat_full_logo.png"
                 WidthRequest="280"
                 Aspect="AspectFit"
-                SemanticProperties.Description="MediCat" />
+                SemanticProperties.Description="MediCat"
+                Margin="-60" />
 
             <Button x:Name="LoginBtn"
                 Text="Login"
                 FontFamily="Verdana"
-                FontSize="30"
+                FontSize="36"
                 FontAttributes="Bold"
                 TextColor="White"
                 BackgroundColor="LightSteelBlue"
-                HeightRequest="60"
-                WidthRequest="225"
+                HeightRequest="75"
+                WidthRequest="195"
                 HorizontalOptions="Center" 
                 Clicked="OnLoginClicked" />
 
@@ -29,15 +30,16 @@
                 SemanticProperties.HeadingLevel="Level2">
                 <Label.FormattedText>
                     <FormattedString>
-                    <Span Text="Don't have an account? " />
-                    <Span Text="Sign Up" 
+                        <Span Text="Don't have an account? " FontSize="20" />
+                        <Span Text="Sign Up" 
                             TextColor="LightBlue"
-                            TextDecorations="Underline">
-                    <Span.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSignUpTapped" />
-                    </Span.GestureRecognizers>
-                    </Span>
-                    <Span Text=" here" />
+                            TextDecorations="Underline"
+                            FontSize="20">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnSignUpTapped" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=" here." FontSize="20" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>

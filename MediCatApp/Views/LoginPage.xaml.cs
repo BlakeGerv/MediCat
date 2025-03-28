@@ -7,12 +7,21 @@
             InitializeComponent();
 
             // Attach event handlers from Tools
-            LoginBtn.Pressed += Tools.ButtonPressed;
-            LoginBtn.Released += Tools.ButtonReleased;
+            if (Tools.ButtonPressed != null)
+                LoginBtn.Pressed += Tools.ButtonPressed;
+            if (Tools.ButtonReleased != null)
+                LoginBtn.Released += Tools.ButtonReleased;
         }
-        private async void OnImageTapped(object sender, EventArgs e)
+        private async void OnSignUpTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new StartPage());
+            await Navigation.PushAsync(new SignUpPage());
+        }
+        private async void OnCheckedChanged(object sender, EventArgs e)
+        {
+            if (DisplayPassword.IsChecked)
+                Password.IsPassword = false;
+            else
+                Password.IsPassword = true;
         }
     }
 

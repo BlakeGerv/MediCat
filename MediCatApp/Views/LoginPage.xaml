@@ -1,39 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MediCatApp.Views.LoginPage">
+             x:Class="MediCatApp.Views.LoginPage"
+             BackgroundImageSource="calico_cat_pattern.jpeg">
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="medicat_full_logo.png"
-                WidthRequest="280"
-                Aspect="AspectFit"
-                SemanticProperties.Description="MediCat">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnImageTapped" />
-                </Image.GestureRecognizers>
-            </Image>
-
-                <Label
-                Text="Login Page"
-                Style="{StaticResource Headline}"
-                FontAttributes="Bold"
-                TextColor="White"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            <Button x:Name="LoginBtn"
-                Text="Login"
-                BackgroundColor="LightSteelBlue"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontSize="30"
-                FontFamily="Verdana"
-                HeightRequest="60"
-                WidthRequest="225"
-                HorizontalOptions="Center" />
+            Margin="45">
+            <Border 
+                Stroke="LightSteelBlue" 
+                BackgroundColor="White">
+                <VerticalStackLayout
+                    Margin="25"
+                    Spacing="5">
+                    <Label
+                        Text="Login"
+                        Style="{StaticResource Headline}"
+                        FontFamily="Verdana"
+                        FontAttributes="Bold"
+                        TextColor="Black"
+                        Margin="0,0,0,20" />
+                    <Entry 
+                        Placeholder="username"
+                        MaxLength="32"
+                        TextColor="Grey"/>
+                    <Entry x:Name="Password"
+                        Placeholder="password"
+                        MaxLength="32"
+                        IsPassword="true"
+                        TextColor="Grey"/>
+                    <HorizontalStackLayout 
+                        Margin="15,-15,0,0"
+                        Spacing="-10">
+                        <CheckBox x:Name="DisplayPassword"
+                            CheckedChanged="OnCheckedChanged"/>
+                        <Label Style="{StaticResource SubHeadline}"
+                            Text="Show Password"
+                            TextColor="LightGrey"
+                            FontSize="14"
+                            VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                    <Button x:Name="LoginBtn"
+                        Text="Login"
+                        BackgroundColor="LightSteelBlue"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        FontFamily="Verdana"
+                        HeightRequest="50"
+                        WidthRequest="130"
+                        HorizontalOptions="Center" />
+                    <Label Style="{StaticResource SubHeadline}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Don't have an account? " 
+                                    TextColor="DimGrey"
+                                    FontSize="16"/>
+                                <Span Text="Sign Up" 
+                                    TextColor="LightBlue"
+                                    FontSize="16"
+                                    TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnSignUpTapped" />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                                <Span Text=" here."
+                                    TextColor="DimGrey"
+                                    FontSize="16"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 
