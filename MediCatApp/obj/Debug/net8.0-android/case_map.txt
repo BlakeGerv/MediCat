@@ -1,4 +1,0 @@
-images\dotnet_bot;images\dotnet_bot
-images\medicat_full_logo;images\medicat_full_logo
-images\medicat_small_logo;images\medicat_small_logo
-raw\aboutassets;raw\AboutAssets
