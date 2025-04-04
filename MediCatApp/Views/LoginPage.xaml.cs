@@ -61,14 +61,14 @@ namespace MediCatApp.Views
             bool hasError = false;
 
             //Password Validation
-            if (Password == null || Password.Equals(""))
+            if (string.IsNullOrEmpty(Password))
             {
                 Passwordcheck = "Missing Password";
                 hasError = true;
             }
 
             //Email Validation
-            if (Email == null || Email.Equals(""))
+            if (string.IsNullOrEmpty(Email))
             {
                 Emailcheck = "Missing Email";
                 hasError = true;
@@ -85,6 +85,7 @@ namespace MediCatApp.Views
             {
                 await _authClient.SignInWithEmailAndPasswordAsync(Email, Password);
                 Email = Password = "";
+                await Shell.Current.GoToAsync("//Main");
             }
             catch (FirebaseAuthHttpException e)
             {

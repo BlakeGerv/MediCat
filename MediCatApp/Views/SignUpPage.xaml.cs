@@ -79,9 +79,9 @@ namespace MediCatApp.Views
             bool hasError = false;
 
             //Username Validation
-            if (Username == null || Username.Equals(""))
+            if (string.IsNullOrEmpty(Username))
             {
-                Usernamecheck = "Missing Username";
+                Usernamecheck = "Missing Required Element";
                 hasError = true;
             }
             else if (Username.Length < 6)
@@ -91,9 +91,9 @@ namespace MediCatApp.Views
             }
 
             //Password Validation
-            if (Password == null || Password.Equals(""))
+            if (string.IsNullOrEmpty(Password))
             {
-                Passwordcheck = "Missing Password";
+                Passwordcheck = "Missing Required Element";
                 hasError = true;
             }
             else if (Password.Length < 6)
@@ -103,16 +103,21 @@ namespace MediCatApp.Views
             }
 
             //Re-Password Validation
-            if (!Repassword.Equals(Password))
+            if (string.IsNullOrEmpty(Repassword))
+            {
+                Repasswordcheck = "Missing Required Element";
+                hasError = true;
+            }
+            else if (string.IsNullOrEmpty(Password) || Password != Repassword)
             {
                 Repasswordcheck = "Passwords must match";
                 hasError = true;
             }
 
             //Email Validation
-            if (Email == null || Email.Equals(""))
+            if (string.IsNullOrEmpty(Email))
             {
-                Emailcheck = "Missing Email";
+                Emailcheck = "Missing Required Element";
                 hasError = true;
             }
 

@@ -1,48 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MediCatApp.Views.StartPage">
+             x:Class="MediCatApp.Views.StartPage"
+             BackgroundImageSource="calico_cat_pattern.jpeg">
 
     <ScrollView>
         <VerticalStackLayout
-            Margin="45"
-            Spacing="15">
-            <Image
-                Source="medicat_full_logo.png"
-                WidthRequest="280"
-                Aspect="AspectFit"
-                SemanticProperties.Description="MediCat"
-                Margin="-60" />
+            Margin="45,90,45,90">
+            <Border 
+                Stroke="LightSteelBlue" 
+                BackgroundColor="White">
+                <VerticalStackLayout
+                    Margin="25"
+                    Spacing="5"
+                    VerticalOptions="Center">
+                    <Image Margin="0,25"
+                        Source="medicat_full_logo.png"
+                        WidthRequest="250"
+                        Aspect="AspectFit"
+                        SemanticProperties.Description="MediCat"/>
+                    <Button x:Name="LoginBtn"
+                        Text="Login"
+                        FontFamily="Verdana"
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        BackgroundColor="LightSteelBlue"
+                        HeightRequest="60"
+                        WidthRequest="156"
+                        HorizontalOptions="Center" 
+                        Command="{Binding NavigateLoginCommand}" /> 
 
-            <Button x:Name="LoginBtn"
-                Text="Login"
-                FontFamily="Verdana"
-                FontSize="36"
-                FontAttributes="Bold"
-                TextColor="White"
-                BackgroundColor="LightSteelBlue"
-                HeightRequest="75"
-                WidthRequest="195"
-                HorizontalOptions="Center" 
-                Command="{Binding NavigateLoginCommand}" />
-
-            <Label Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Don't have an account? " FontSize="20" />
-                        <Span Text="Sign Up" 
-                            TextColor="LightBlue"
-                            TextDecorations="Underline"
-                            FontSize="20">
-                            <Span.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding NavigateSignUpCommand}" />
-                            </Span.GestureRecognizers>
-                        </Span>
-                        <Span Text=" here." FontSize="20" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+                    <Label Style="{StaticResource SubHeadline}"
+                        SemanticProperties.HeadingLevel="Level2">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Don't have an account? " 
+                                      TextColor="DimGrey"
+                                      FontSize="18" />
+                                <Span Text="Sign Up" 
+                                    TextColor="LightBlue"
+                                    TextDecorations="Underline"
+                                    FontSize="18">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding NavigateSignUpCommand}" />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                                <Span Text=" here." 
+                                      TextColor="DimGrey"
+                                      FontSize="18" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 

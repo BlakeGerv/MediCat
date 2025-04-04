@@ -39,6 +39,10 @@ namespace MediCatApp
             builder.Services.AddSingleton<SignUpViewModel>();
             builder.Services.AddSingleton<LoginPage>();
             builder.Services.AddSingleton<SignInViewModel>();
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainPageViewModel>();
+            builder.Services.AddSingleton<ProfilePage>();
+            builder.Services.AddSingleton<ProfilePageViewModel>();
 
             return builder.Build();
         }

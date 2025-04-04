@@ -5,8 +5,29 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
             Spacing="25">
+            <Border 
+                Stroke="LightSteelBlue" 
+                BackgroundColor="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="0,5,5,5"
+                        Source="medicat_full_logo.png"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"/>
+                    <Image Margin="0,5,5,5"
+                        Source="blank_profile_picture.png"
+                        HeightRequest="45"
+                        HorizontalOptions="End">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateProfileCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </Border>
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -14,7 +35,7 @@
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Hello, World!"
+                Text="Main Page"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
