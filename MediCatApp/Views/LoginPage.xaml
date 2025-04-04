@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediCatApp.Views.LoginPage"
+             BackgroundImageSource="calico_cat_pattern.jpeg">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Margin="45">
+            <Border 
+                Stroke="LightSteelBlue" 
+                BackgroundColor="White">
+                <VerticalStackLayout
+                    Margin="25"
+                    Spacing="5">
+                    <Label
+                        Text="Login"
+                        Style="{StaticResource Headline}"
+                        FontFamily="Verdana"
+                        FontAttributes="Bold"
+                        TextColor="Black"
+                        Margin="0,0,0,20" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Email:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Emailcheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,10">
+                        <Entry ReturnType="Next"
+                            MaxLength="128"
+                            Keyboard="Email"
+                            TextColor="Grey"
+                            Text="{Binding Email}"
+                            Margin="-5,-5,-5,-5"/>
+                    </Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Password:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Passwordcheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,10">
+                        <Entry x:Name="Password"
+                            ReturnType="Next"
+                            MaxLength="32"
+                            IsPassword="true"
+                            TextColor="Grey"
+                            Text="{Binding Password}"
+                            Margin="-5,-5,-5,-5"/>
+                    </Border>
+                    <HorizontalStackLayout 
+                        Margin="15,-15,0,0"
+                        Spacing="-10">
+                        <CheckBox x:Name="DisplayPassword"
+                            CheckedChanged="OnCheckedChanged"/>
+                        <Label Style="{StaticResource SubHeadline}"
+                            Text="Show Password"
+                            TextColor="LightGrey"
+                            FontSize="14"
+                            VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                    <Button x:Name="LoginBtn"
+                        Text="Login"
+                        BackgroundColor="LightSteelBlue"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        FontFamily="Verdana"
+                        HeightRequest="50"
+                        WidthRequest="130"
+                        HorizontalOptions="Center"
+                        Command="{Binding SignInCommand}"/>
+                    <Label Style="{StaticResource SubHeadline}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Don't have an account? " 
+                                    TextColor="DimGrey"
+                                    FontSize="16"/>
+                                <Span Text="Sign Up" 
+                                    TextColor="LightBlue"
+                                    FontSize="16"
+                                    TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding NavigateSignUpCommand}" />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                                <Span Text=" here."
+                                    TextColor="DimGrey"
+                                    FontSize="16"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="14"/>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

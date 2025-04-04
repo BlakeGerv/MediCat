@@ -1,0 +1,46 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import random
+
+class VacuumSLAM:
+    def __init__(self, grid_size=(100, 100)):
+        self.grid_size = grid_size
+        self.map = np.zeros(grid_size)  # 0: Unexplored, 1: Free space, -1: Obstacle
+        self.position = np.array([grid_size[0]//2, grid_size[1]//2])
+        self.trajectory = []
+    
+    def sense_environment(self):
+        x, y = self.position
+        for dx in range(-5, 6):
+            for dy in range(-5, 6):
+                nx, ny = x + dx, y + dy
+                if 0 <= nx < self.grid_size[0] and 0 <= ny < self.grid_size[1]:
+                    self.map[nx, ny] = 1 if random.random() > 0.1 else -1  # 10% chance of obstacle
+    
+    def move(self, direction):
+        moves = {"up": (0, -1), "down": (0, 1), "left": (-1, 0), "right": (1, 0)}
+        if direction in moves:
+            new_pos = self.position + np.array(moves[direction])
+            if self.is_valid_move(new_pos):
+                self.position = new_pos
+                self.trajectory.append(tuple(self.position))
+                self.sense_environment()
+    
+    def is_valid_move(self, new_pos):
+        x, y = new_pos
+        return 0 <= x < self.grid_size[0] and 0 <= y < self.grid_size[1] and self.map[x, y] != -1
+    
+    def plot_map(self):
+        plt.imshow(self.map.T, cmap='gray', origin='lower')
+        traj_x, traj_y = zip(*self.trajectory)
+        plt.plot(traj_x, traj_y, 'r-', label='Path')
+        plt.scatter(*self.position, color='blue', label='Vacuum Position')
+        plt.legend()
+        plt.show()
+
+vacuum = VacuumSLAM()
+vacuum.sense_environment()
+vacuum.move("right")
+vacuum.move("up")
+vacuum.move("left")
+vacuum.plot_map()
