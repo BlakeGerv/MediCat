@@ -66,6 +66,7 @@ namespace MediCatApp.WinUI
 #if DEBUG && !DISABLE_XAML_GENERATED_BREAK_ON_UNHANDLED_EXCEPTION
             UnhandledException += (sender, e) =>
             {
+                System.Diagnostics.Debug.WriteLine($"Unhandled Exception: {e.Exception}");
                 if (global::System.Diagnostics.Debugger.IsAttached) global::System.Diagnostics.Debugger.Break();
             };
 #endif

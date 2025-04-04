@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-03-28T17:59:57.329</Modified>
+      <Modified>2025-04-04T02:23:59.056</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-03-25T20:04:05.041</Modified>
+      <Modified>2025-04-01T01:36:02.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MediCatApp.runtimeconfig.json">
       <PackagePath>MediCatApp.runtimeconfig.json</PackagePath>
-      <Modified>2025-03-21T17:50:31.311</Modified>
+      <Modified>2025-04-01T01:36:01.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MediCatApp.dll">
       <PackagePath>MediCatApp.dll</PackagePath>
-      <Modified>2025-03-28T17:59:54.603</Modified>
+      <Modified>2025-04-04T02:23:55.329</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MediCatApp.exe</PackagePath>
-      <Modified>2025-03-28T17:59:54.787</Modified>
+      <Modified>2025-04-04T02:23:55.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -306,6 +306,14 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-11-11T17:23:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\communitytoolkit.mvvm\8.4.0\lib\net8.0-windows10.0.17763\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2024-12-12T07:54:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\firebaseauthentication.net\4.1.0\lib\netstandard2.0\Firebase.Auth.dll">
+      <PackagePath>Firebase.Auth.dll</PackagePath>
+      <Modified>2023-09-07T14:50:22.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\firebasedatabase.net\4.2.0\lib\netstandard2.0\Firebase.dll">
       <PackagePath>Firebase.dll</PackagePath>
       <Modified>2023-02-05T16:37:42.000</Modified>
@@ -450,9 +458,9 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2025-02-04T17:38:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\newtonsoft.json\13.0.2\lib\net6.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2021-03-17T20:03:36.000</Modified>
+      <Modified>2022-11-24T02:10:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\system.reactive\4.0.0\lib\netstandard2.0\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
@@ -620,7 +628,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MediCatApp.deps.json">
       <PackagePath>MediCatApp.deps.json</PackagePath>
-      <Modified>2025-03-21T17:50:30.903</Modified>
+      <Modified>2025-04-01T01:36:00.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.maui.controls.compatibility\9.0.50\lib\net9.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

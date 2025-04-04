@@ -67,6 +67,14 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "FirebaseDatabase.net": {
               "target": "Package",
               "version": "[4.2.0, )"
@@ -114,6 +122,14 @@
         "net9.0-ios18.2": {
           "targetAlias": "net9.0-ios",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "FirebaseDatabase.net": {
               "target": "Package",
               "version": "[4.2.0, )"
@@ -161,6 +177,14 @@
         "net9.0-maccatalyst18.2": {
           "targetAlias": "net9.0-maccatalyst",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "FirebaseDatabase.net": {
               "target": "Package",
               "version": "[4.2.0, )"
@@ -209,6 +233,14 @@
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "FirebaseDatabase.net": {
               "target": "Package",
               "version": "[4.2.0, )"

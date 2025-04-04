@@ -21,14 +21,16 @@
                         TextColor="Black"
                         Margin="0,0,0,20" />
                     <Entry 
-                        Placeholder="username"
+                        Placeholder="email"
                         MaxLength="32"
-                        TextColor="Grey"/>
+                        TextColor="Grey"
+                        Text="{Binding Email}"/>
                     <Entry x:Name="Password"
                         Placeholder="password"
                         MaxLength="32"
                         IsPassword="true"
-                        TextColor="Grey"/>
+                        TextColor="Grey"
+                        Text="{Binding Password}"/>
                     <HorizontalStackLayout 
                         Margin="15,-15,0,0"
                         Spacing="-10">
@@ -49,7 +51,8 @@
                         FontFamily="Verdana"
                         HeightRequest="50"
                         WidthRequest="130"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center"
+                        Command="{Binding SignInCommand}"/>
                     <Label Style="{StaticResource SubHeadline}">
                         <Label.FormattedText>
                             <FormattedString>
@@ -61,7 +64,7 @@
                                     FontSize="16"
                                     TextDecorations="Underline">
                                     <Span.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnSignUpTapped" />
+                                        <TapGestureRecognizer Command="{Binding NavigateSignUpCommand}" />
                                     </Span.GestureRecognizers>
                                 </Span>
                                 <Span Text=" here."

@@ -1,8 +1,12 @@
-﻿namespace MediCatApp.Views
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Firebase.Auth;
+
+namespace MediCatApp.Views
 {
     public partial class LoginPage : ContentPage
     {
-        public LoginPage()
+        public LoginPage(SignInViewModel viewModel)
         {
             InitializeComponent();
 
@@ -11,10 +15,8 @@
                 LoginBtn.Pressed += Tools.ButtonPressed;
             if (Tools.ButtonReleased != null)
                 LoginBtn.Released += Tools.ButtonReleased;
-        }
-        private async void OnSignUpTapped(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SignUpPage());
+
+            BindingContext = viewModel;
         }
         private async void OnCheckedChanged(object sender, EventArgs e)
         {
@@ -25,4 +27,29 @@
         }
     }
 
+    public partial class SignInViewModel : ObservableObject
+    {
+        private readonly FirebaseAuthClient _authClient;
+
+        [ObservableProperty]
+        private string _email;
+
+        [ObservableProperty]
+        private string _password;
+        public SignInViewModel(FirebaseAuthClient authClient)
+        {
+            _authClient = authClient;
+        }
+
+        [RelayCommand]
+        private async Task SignIn()
+        {
+            await _authClient.SignInWithEmailAndPasswordAsync(Email, Password);
+        }
+        [RelayCommand]
+        private async Task NavigateSignUp()
+        {
+            await Shell.Current.GoToAsync("//SignUp");
+        }
+    }
 }

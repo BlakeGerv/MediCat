@@ -9,6 +9,18 @@
 
     <ShellContent
         ContentTemplate="{DataTemplate local:StartPage}"
-        Route="StartPage" />
+        Route="StartPage"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:SignUpPage}"
+        Route="SignUp"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="Login"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Main"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:ProfilePage}"
+        Route="Profile"/>
 
 </Shell>

@@ -24,7 +24,7 @@
                 HeightRequest="75"
                 WidthRequest="195"
                 HorizontalOptions="Center" 
-                Clicked="OnLoginClicked" />
+                Command="{Binding NavigateLoginCommand}" />
 
             <Label Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2">
@@ -36,7 +36,7 @@
                             TextDecorations="Underline"
                             FontSize="20">
                             <Span.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="OnSignUpTapped" />
+                                <TapGestureRecognizer Command="{Binding NavigateSignUpCommand}" />
                             </Span.GestureRecognizers>
                         </Span>
                         <Span Text=" here." FontSize="20" />

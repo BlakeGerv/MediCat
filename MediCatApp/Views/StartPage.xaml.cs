@@ -1,23 +1,33 @@
-﻿namespace MediCatApp.Views
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+
+namespace MediCatApp.Views
 {
     public partial class StartPage : ContentPage
     {
-        public StartPage()
+        public StartPage(StartViewModel viewModel)
         {
             InitializeComponent();
 
             // Attach event handlers from Tools
             LoginBtn.Pressed += Tools.ButtonPressed;
             LoginBtn.Released += Tools.ButtonReleased;
-        }
-        private async void OnLoginClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new LoginPage());
-        }
-        private async void OnSignUpTapped(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SignUpPage());
+
+            BindingContext = viewModel;
         }
     }
 
+    public partial class StartViewModel : ObservableObject
+    {
+        [RelayCommand]
+        private async Task NavigateLogin()
+        {
+            await Shell.Current.GoToAsync("//Login");
+        }
+        [RelayCommand]
+        private async Task NavigateSignUp()
+        {
+            await Shell.Current.GoToAsync("//SignUp");
+        }
+    }
 }

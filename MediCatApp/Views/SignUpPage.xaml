@@ -14,70 +14,112 @@
                 <VerticalStackLayout
                     Margin="25"
                     Spacing="5">
-                    <Label
-                        Text="Sign Up"
+                    <Label Text="Sign Up"
                         Style="{StaticResource Headline}"
                         FontFamily="Verdana"
                         FontAttributes="Bold"
                         TextColor="Black"
                         Margin="0,0,0,20"/>
-                    <Label Text="*"
-                        Margin="0,0,0,-25"
-                        TextColor="Tomato"
-                        FontSize="14"
-                        HorizontalOptions="End"/>
-                    <Entry
-                        Placeholder="firstname"
-                        MaxLength="64"
-                        TextColor="Grey"/>
-                    <Label Text="*"
-                        Margin="0,0,0,-25"
-                        TextColor="Tomato"
-                        FontSize="14"
-                        HorizontalOptions="End"/>
-                    <Entry
-                        Placeholder="lastname"
-                        MaxLength="64"
-                        TextColor="Grey"/>
-                    <Entry
-                        Placeholder="email address"
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Username:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Usernamecheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,10">
+                        <Entry ReturnType="Next"
+                            MaxLength="32"
+                            TextColor="Grey"
+                            Text="{Binding Username}"
+                            Margin="-5,-5,-5,-5"/>
+                    </Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Email:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Emailcheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,10">
+                        <Entry ReturnType="Next"
                         MaxLength="128"
                         Keyboard="Email"
-                        TextColor="Grey"/>
-                    <Entry
-                        Placeholder="phone number"
-                        MaxLength="18"
-                        Keyboard="Telephone"
-                        TextColor="Grey"/>
-                    <Label Text="*"
-                        Margin="0,0,0,-25"
-                        TextColor="Tomato"
-                        FontSize="14"
-                        HorizontalOptions="End"/>
-                    <Entry
-                        Placeholder="username"
-                        MaxLength="32"
-                        TextColor="Grey"/>
-                    <Label Text="*"
-                        Margin="0,0,0,-25"
-                        TextColor="Tomato"
-                        FontSize="14"
-                        HorizontalOptions="End"/>
-                    <Entry x:Name="Password"
-                        Placeholder="password"
-                        MaxLength="32"
-                        IsPassword="true"
-                        TextColor="Grey"/>
-                    <Label Text="*"
-                        Margin="0,0,0,-25"
-                        TextColor="Tomato"
-                        FontSize="14"
-                        HorizontalOptions="End"/>
-                    <Entry x:Name="RePassword"
-                        Placeholder="re-enter password"
+                        TextColor="Grey"
+                        Text="{Binding Email}"
+                        Margin="-5,-5,-5,-5"/>
+                    </Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Password:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Passwordcheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,10">
+                        <Entry x:Name="Password"
+                        ReturnType="Next"
                         MaxLength="32"
                         IsPassword="true"
-                        TextColor="Grey"/>
+                        TextColor="Grey"
+                        Text="{Binding Password}"
+                        Margin="-5,-5,-5,-5"/>
+                    </Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Re-enter Password:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Repasswordcheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,5">
+                        <Entry x:Name="RePassword"
+                        MaxLength="32"
+                        IsPassword="true"
+                        TextColor="Grey"
+                        Text="{Binding Repassword}"
+                        Margin="-5,-5,-5,-5"/>
+                    </Border>
                     <HorizontalStackLayout 
                         Margin="15,-15,0,0"
                         Spacing="-10">
@@ -98,7 +140,8 @@
                         FontFamily="Verdana"
                         HeightRequest="50"
                         WidthRequest="130"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center" 
+                        Command="{Binding SignUpCommand}"/>
                     <Label Style="{StaticResource SubHeadline}">
                         <Label.FormattedText>
                             <FormattedString>
@@ -110,7 +153,7 @@
                                     FontSize="16"
                                     TextDecorations="Underline">
                                     <Span.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnLoginTapped" />
+                                        <TapGestureRecognizer Command="{Binding NavigateLoginCommand}"/>
                                     </Span.GestureRecognizers>
                                 </Span>
                                 <Span Text=" here."
@@ -119,6 +162,7 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
+                    <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="12"/>
                 </VerticalStackLayout>
             </Border>
         </VerticalStackLayout>
