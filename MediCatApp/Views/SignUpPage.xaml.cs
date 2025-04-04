@@ -73,7 +73,7 @@ namespace MediCatApp.Views
         [RelayCommand]
         private async Task SignUp()
         {
-            Emailcheck = Usernamecheck = "";
+            Emailcheck = Usernamecheck = Errormessage = "";
             Passwordcheck = Repasswordcheck = "*";
 
             bool hasError = false;
@@ -145,6 +145,8 @@ namespace MediCatApp.Views
         [RelayCommand]
         private async Task NavigateLogin()
         {
+            Email = Username = Password = Repassword = Errormessage = "";
+            Emailcheck = Usernamecheck = Passwordcheck = Repasswordcheck = "*";
             await Shell.Current.GoToAsync("//Login");
         }
     }

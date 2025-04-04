@@ -20,17 +20,57 @@
                         FontAttributes="Bold"
                         TextColor="Black"
                         Margin="0,0,0,20" />
-                    <Entry 
-                        Placeholder="email"
-                        MaxLength="32"
-                        TextColor="Grey"
-                        Text="{Binding Email}"/>
-                    <Entry x:Name="Password"
-                        Placeholder="password"
-                        MaxLength="32"
-                        IsPassword="true"
-                        TextColor="Grey"
-                        Text="{Binding Password}"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Email:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Emailcheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,10">
+                        <Entry ReturnType="Next"
+                            MaxLength="128"
+                            Keyboard="Email"
+                            TextColor="Grey"
+                            Text="{Binding Email}"
+                            Margin="-5,-5,-5,-5"/>
+                    </Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Password:"
+                            Margin="5,0,0,-5"
+                            TextColor="Black"
+                            FontSize="14"
+                            HorizontalOptions="Start"/>
+                        <Label Text="{Binding Passwordcheck}"
+                            Margin="0,0,0,-5"
+                            TextColor="Tomato"
+                            FontSize="14"
+                            Grid.Column="1"
+                            HorizontalOptions="End"/>
+                    </Grid>
+                    <Border Stroke="DimGrey" Margin="5,5,5,10">
+                        <Entry x:Name="Password"
+                            ReturnType="Next"
+                            MaxLength="32"
+                            IsPassword="true"
+                            TextColor="Grey"
+                            Text="{Binding Password}"
+                            Margin="-5,-5,-5,-5"/>
+                    </Border>
                     <HorizontalStackLayout 
                         Margin="15,-15,0,0"
                         Spacing="-10">
@@ -73,6 +113,7 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
+                    <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="14"/>
                 </VerticalStackLayout>
             </Border>
         </VerticalStackLayout>

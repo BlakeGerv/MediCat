@@ -162,7 +162,7 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
-                    <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="12"/>
+                    <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="14"/>
                 </VerticalStackLayout>
             </Border>
         </VerticalStackLayout>
