@@ -51,6 +51,7 @@ namespace MediCatApp.Views
         public SignInViewModel(FirebaseAuthClient authClient)
         {
             _authClient = authClient;
+            Email = Password = Emailcheck = Passwordcheck = Errormessage = "";
         }
 
         [RelayCommand]

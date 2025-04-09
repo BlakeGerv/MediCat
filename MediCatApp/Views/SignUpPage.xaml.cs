@@ -68,6 +68,7 @@ namespace MediCatApp.Views
         {
             _authClient = authClient;
             Emailcheck = Usernamecheck = Passwordcheck = Repasswordcheck = "*";
+            Email = Username = Password = Repassword = Errormessage = "";
         }
 
         [RelayCommand]
@@ -131,8 +132,17 @@ namespace MediCatApp.Views
             try
             {
                 await _authClient.CreateUserWithEmailAndPasswordAsync(Email, Password, Username);
-                Email = Username = Password = Repassword = "";
-                await Shell.Current.GoToAsync("//Login");
+                try
+                {
+                    Random rand = new Random();
+                    _authClient.User.Info.PhotoUrl = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{rand.Next(650)}.png";
+                    Email = Username = Password = Repassword = "";
+                    await Shell.Current.GoToAsync("//Login");
+                }
+                catch (Exception e)
+                {
+                    Errormessage = e.Message;
+                }
             }
             catch (FirebaseAuthHttpException e)
             {

@@ -5,9 +5,10 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25">
+            Spacing="20"
+            BackgroundColor="WhiteSmoke">
             <Border 
-                Stroke="LightSteelBlue" 
+                Stroke="DarkGrey" 
                 BackgroundColor="White">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -19,31 +20,51 @@
                         HeightRequest="60"
                         HorizontalOptions="Center"/>
                     <Image Margin="0,5,5,5"
-                        Source="blank_profile_picture.png"
-                        HeightRequest="45"
+                        HeightRequest="50"
+                        WidthRequest="50"
                         HorizontalOptions="End">
+                        <Image.Source>
+                            <UriImageSource Uri="{Binding PhotoUrl}" />
+                        </Image.Source>
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding NavigateProfileCommand}" />
                         </Image.GestureRecognizers>
+                        <Image.Clip>
+                            <EllipseGeometry
+                                Center="25,25"
+                                RadiusX="25"
+                                RadiusY="25" />
+                        </Image.Clip>
                     </Image>
                 </Grid>
             </Border>
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
             <Label
                 Text="Main Page"
+                TextColor="Black"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Button
+                Text="Cat Robot"
+                BackgroundColor="LightSteelBlue"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="24"
+                FontFamily="Verdana"
+                HeightRequest="50"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                Command="{Binding NavigateCatRobotCommand}"/>
+            <Button
+                Text="Weight Sensor"
+                BackgroundColor="LightSteelBlue"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="24"
+                FontFamily="Verdana"
+                HeightRequest="50"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                Command="{Binding NavigateWeightSensorCommand}"/>
         </VerticalStackLayout>
     </ScrollView>
 

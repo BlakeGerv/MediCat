@@ -250,25 +250,25 @@
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.configuration.abstractions\9.0.0\lib\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.dependencyinjection\9.0.3\lib\net9.0\Microsoft.Extensions.DependencyInjection.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.dependencyinjection\9.0.4\lib\net9.0\Microsoft.Extensions.DependencyInjection.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\9.0.3\lib\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\9.0.4\lib\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.logging\9.0.3\lib\net9.0\Microsoft.Extensions.Logging.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.logging\9.0.4\lib\net9.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.logging.abstractions\9.0.3\lib\net9.0\Microsoft.Extensions.Logging.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.logging.abstractions\9.0.4\lib\net9.0\Microsoft.Extensions.Logging.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.logging.debug\9.0.3\lib\net9.0\Microsoft.Extensions.Logging.Debug.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.logging.debug\9.0.4\lib\net9.0\Microsoft.Extensions.Logging.Debug.dll">
       <PackagePath>Microsoft.Extensions.Logging.Debug.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.options\9.0.3\lib\net9.0\Microsoft.Extensions.Options.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.options\9.0.4\lib\net9.0\Microsoft.Extensions.Options.dll">
       <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.primitives\9.0.3\lib\net9.0\Microsoft.Extensions.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.extensions.primitives\9.0.4\lib\net9.0\Microsoft.Extensions.Primitives.dll">
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.graphics.win2d\1.2.0\lib\net6.0-windows10.0.19041.0\Microsoft.Graphics.Canvas.Interop.dll">

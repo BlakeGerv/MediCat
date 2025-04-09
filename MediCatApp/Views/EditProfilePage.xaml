@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MediCatApp.Views.EditProfilePage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            BackgroundColor="WhiteSmoke">
+            <Border 
+                Stroke="DarkGrey" 
+                BackgroundColor="White">    
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Margin="0,5,5,5"
+                        Source="medicat_full_logo.png"
+                        HeightRequest="60"
+                        HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateMainCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Margin="0,5,5,5"
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        HorizontalOptions="End">
+                        <Image.Source>
+                            <UriImageSource Uri="{Binding PhotoUrl}" />
+                        </Image.Source>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateProfileCommand}" />
+                        </Image.GestureRecognizers>
+                        <Image.Clip>
+                            <EllipseGeometry
+                                Center="25,25"
+                                RadiusX="25"
+                                RadiusY="25" />
+                        </Image.Clip>
+                    </Image>
+                </Grid>
+            </Border>
+            <Image
+                HeightRequest="180"
+                WidthRequest="180"
+                Aspect="AspectFit">
+                <Image.Source>
+                    <UriImageSource Uri="{Binding PhotoUrl}" />
+                </Image.Source>
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding RefreshPhotoUrlCommand}" />
+                </Image.GestureRecognizers>
+                <Image.Clip>
+                    <EllipseGeometry
+                        Center="90,90"
+                        RadiusX="90"
+                        RadiusY="90" />
+                </Image.Clip>
+            </Image>
+            <Label
+                Margin="0,-25,0,0"
+                Text="{Binding Username}"
+                TextColor="Black"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Label Margin="15,15,0,-15"
+                Text="User Information:"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="14"
+                HorizontalOptions="Start"/>
+            <Border Stroke="DarkGrey" Margin="10,0,5,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Email:"
+                        Margin="5,5,5,0"
+                        TextColor="Black"
+                        FontSize="14"
+                        HorizontalOptions="Start"/>
+                    <Label Text="{Binding Email}"
+                        Margin="0,5,5,5"
+                        TextColor="Black"
+                        FontSize="14"
+                        Grid.Column="1"
+                        HorizontalOptions="Start"/>
+                </Grid>
+            </Border>
+            <Border Stroke="WhiteSmoke" Margin="10,10,5,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="ProfileBtn"
+                        Margin="0,5,0,5"
+                        Text="Done"
+                        BackgroundColor="LightSteelBlue"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        FontFamily="Verdana"
+                        WidthRequest="120"
+                        HorizontalOptions="Center"
+                        Command="{Binding UpdateProfileCommand}"/>
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

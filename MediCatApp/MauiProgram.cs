@@ -2,6 +2,7 @@
 using Firebase.Auth.Providers;
 using Microsoft.Extensions.Logging;
 using MediCatApp.Views;
+using Firebase.Auth.Repository;
 
 namespace MediCatApp
 {
@@ -23,13 +24,14 @@ namespace MediCatApp
 #endif
 
             builder.Services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig()
-            { 
+            {
                 ApiKey = "AIzaSyADmlOzFpnEmFnyeVo0MRIeoBXK3bMvDLM",
                 AuthDomain = "medicat-5ca75.firebaseapp.com",
-                Providers = new FirebaseAuthProvider[] 
+                Providers = new FirebaseAuthProvider[]
                 {
                     new EmailProvider()
-                }
+                },
+                UserRepository = new FileUserRepository("MediCat")
             }));
 
 
@@ -43,6 +45,12 @@ namespace MediCatApp
             builder.Services.AddSingleton<MainPageViewModel>();
             builder.Services.AddSingleton<ProfilePage>();
             builder.Services.AddSingleton<ProfilePageViewModel>();
+            builder.Services.AddSingleton<EditProfilePage>();
+            builder.Services.AddSingleton<EditProfilePageViewModel>();
+            builder.Services.AddSingleton<CatRobotPage>();
+            builder.Services.AddSingleton<CatRobotPageViewModel>();
+            builder.Services.AddSingleton<WeightSensorPage>();
+            builder.Services.AddSingleton<WeightSensorPageViewModel>();
 
             return builder.Build();
         }

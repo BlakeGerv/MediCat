@@ -5,9 +5,10 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25">
+            Spacing="20"
+            BackgroundColor="WhiteSmoke">
             <Border 
-                Stroke="LightSteelBlue" 
+                Stroke="DarkGrey" 
                 BackgroundColor="White">    
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -23,27 +24,96 @@
                         </Image.GestureRecognizers>
                     </Image>
                     <Image Margin="0,5,5,5"
-                        Source="blank_profile_picture.png"
-                        HeightRequest="45"
-                        HorizontalOptions="End"/>
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        HorizontalOptions="End">
+                        <Image.Source>
+                            <UriImageSource Uri="{Binding PhotoUrl}" />
+                        </Image.Source>
+                        <Image.Clip>
+                            <EllipseGeometry
+                                Center="25,25"
+                                RadiusX="25"
+                                RadiusY="25" />
+                        </Image.Clip>
+                    </Image>
                 </Grid>
             </Border>
             <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
+                HeightRequest="180"
+                WidthRequest="180"
+                Aspect="AspectFit">
+                <Image.Source>
+                    <UriImageSource Uri="{Binding PhotoUrl}" />
+                </Image.Source>
+                <Image.Clip>
+                    <EllipseGeometry
+                        Center="90,90"
+                        RadiusX="90"
+                        RadiusY="90" />
+                </Image.Clip>
+            </Image>
             <Label
-                Text="Profile Page"
+                Margin="0,-25,0,0"
+                Text="{Binding Username}"
+                TextColor="Black"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Label Margin="15,15,0,-15"
+                Text="User Information:"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="14"
+                HorizontalOptions="Start"/>
+            <Border Stroke="DarkGrey" Margin="10,0,5,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Email:"
+                        Margin="5,5,5,0"
+                        TextColor="Black"
+                        FontSize="14"
+                        HorizontalOptions="Start"/>
+                    <Label Text="{Binding Email}"
+                        Margin="0,5,5,5"
+                        TextColor="Black"
+                        FontSize="14"
+                        Grid.Column="1"
+                        HorizontalOptions="Start"/>
+                </Grid>
+            </Border>
+            <Border Stroke="WhiteSmoke" Margin="10,10,5,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="EditProfileBtn"
+                        Margin="0,5,145,5"
+                        Text="Edit Profile"
+                        BackgroundColor="LightSteelBlue"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        FontFamily="Verdana"
+                        WidthRequest="120"
+                        HorizontalOptions="Center"
+                        Command="{Binding NavigateEditProfileCommand}"/>
+                    <Button x:Name="LogOutBtn"
+                        Margin="145,5,0,5"
+                        Text="Log Out"
+                        BackgroundColor="LightSteelBlue"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        FontFamily="Verdana"
+                        WidthRequest="120"
+                        HorizontalOptions="Center"
+                        Command="{Binding LogOutCommand}"/>
+                </Grid>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 

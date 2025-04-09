@@ -51,6 +51,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MediCatApp.Resources.Style
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Brayden/Source/Repos/MediCat/MediCatApp/Views/CatRobotPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediCatApp.Views.CatRobotPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CatRobotPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CatRobotPage.xaml
+
+[C:/Users/Brayden/Source/Repos/MediCat/MediCatApp/Views/EditProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediCatApp.Views.EditProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditProfilePage.xaml
+
 [C:/Users/Brayden/Source/Repos/MediCat/MediCatApp/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediCatApp.Views.LoginPage.xaml
@@ -80,3 +92,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MediCatApp.Views.StartPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\StartPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\StartPage.xaml
+
+[C:/Users/Brayden/Source/Repos/MediCat/MediCatApp/Views/WeightSensor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MediCatApp.Views.WeightSensor.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WeightSensor.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WeightSensor.xaml

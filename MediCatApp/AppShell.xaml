@@ -22,5 +22,14 @@
     <ShellContent
         ContentTemplate="{DataTemplate local:ProfilePage}"
         Route="Profile"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:EditProfilePage}"
+        Route="EditProfile"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:CatRobotPage}"
+        Route="CatRobot"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:WeightSensorPage}"
+        Route="WeightSensor"/>
 
 </Shell>

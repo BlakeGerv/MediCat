@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Firebase.Auth;
 
 namespace MediCatApp.Views
 {
@@ -19,6 +20,12 @@ namespace MediCatApp.Views
 
     public partial class StartViewModel : ObservableObject
     {
+        private readonly FirebaseAuthClient _authClient;
+
+        public StartViewModel(FirebaseAuthClient authClient)
+        {
+            _authClient = authClient;
+        }
         [RelayCommand]
         private async Task NavigateLogin()
         {
