@@ -16,15 +16,11 @@ namespace MediCatApp.Views
     public partial class MainPageViewModel : ObservableObject
     {
         private readonly FirebaseAuthClient _authClient;
-        public string PhotoUrl => _authClient.User?.Info?.PhotoUrl;
+        public string? PhotoUrl => _authClient.User?.Info?.PhotoUrl;
 
         public MainPageViewModel(FirebaseAuthClient authClient)
         {
             _authClient = authClient;
-
-            Random rand = new Random();
-            _authClient.User.Info.PhotoUrl = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{rand.Next(650)}.png";
-            OnPropertyChanged(nameof(PhotoUrl));
         }
 
         [RelayCommand]

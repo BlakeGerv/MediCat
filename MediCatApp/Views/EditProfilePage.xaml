@@ -65,31 +65,6 @@
                 TextColor="Black"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
-            <Label Margin="15,15,0,-15"
-                Text="User Information:"
-                TextColor="Black"
-                FontAttributes="Bold"
-                FontSize="14"
-                HorizontalOptions="Start"/>
-            <Border Stroke="DarkGrey" Margin="10,0,5,10">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Email:"
-                        Margin="5,5,5,0"
-                        TextColor="Black"
-                        FontSize="14"
-                        HorizontalOptions="Start"/>
-                    <Label Text="{Binding Email}"
-                        Margin="0,5,5,5"
-                        TextColor="Black"
-                        FontSize="14"
-                        Grid.Column="1"
-                        HorizontalOptions="Start"/>
-                </Grid>
-            </Border>
             <Border Stroke="WhiteSmoke" Margin="10,10,5,10">
                 <Grid>
                     <Grid.ColumnDefinitions>

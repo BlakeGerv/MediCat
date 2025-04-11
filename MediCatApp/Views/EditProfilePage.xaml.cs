@@ -1,6 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Firebase.Auth;
+using Firebase.Auth.Requests;
+using System.Text;
+using System.Text.Json;
 
 namespace MediCatApp.Views
 {
@@ -51,6 +54,24 @@ namespace MediCatApp.Views
         [RelayCommand]
         private async Task UpdateProfile()
         {
+            var IdToken = await _authClient.User.GetIdTokenAsync();
+            
+            var payload = new
+            {
+                idToken = IdToken,
+                photoUrl = PhotoUrl,
+                returnSecureToken = true
+            };
+
+            var jsonPayload = JsonSerializer.Serialize(payload);
+            var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+            using var httpClient = new HttpClient();
+            var response = await httpClient.PostAsync($"https://identitytoolkit.googleapis.com/v1/accounts:update?key={MauiProgram.apiKey}", content);
+            response.EnsureSuccessStatusCode();
+
+            OnPropertyChanged(nameof(PhotoUrl));
+
             await Shell.Current.GoToAsync("//Profile");
         }
     }

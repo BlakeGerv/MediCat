@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Firebase.Auth;
+using System.Text;
+using System.Text.Json;
 
 namespace MediCatApp.Views
 {
@@ -136,6 +138,23 @@ namespace MediCatApp.Views
                 {
                     Random rand = new Random();
                     _authClient.User.Info.PhotoUrl = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{rand.Next(650)}.png";
+
+                    var IdToken = await _authClient.User.GetIdTokenAsync();
+
+                    var payload = new
+                    {
+                        idToken = IdToken,
+                        photoUrl = _authClient.User.Info.PhotoUrl,
+                        returnSecureToken = true
+                    };
+
+                    var jsonPayload = JsonSerializer.Serialize(payload);
+                    var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+                    using var httpClient = new HttpClient();
+                    var response = await httpClient.PostAsync($"https://identitytoolkit.googleapis.com/v1/accounts:update?key={MauiProgram.apiKey}", content);
+                    response.EnsureSuccessStatusCode();
+
                     Email = Username = Password = Repassword = "";
                     await Shell.Current.GoToAsync("//Login");
                 }

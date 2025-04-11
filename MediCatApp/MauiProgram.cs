@@ -8,6 +8,7 @@ namespace MediCatApp
 {
     public static class MauiProgram
     {
+        public static string apiKey = "AIzaSyADmlOzFpnEmFnyeVo0MRIeoBXK3bMvDLM";
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
@@ -25,7 +26,7 @@ namespace MediCatApp
 
             builder.Services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig()
             {
-                ApiKey = "AIzaSyADmlOzFpnEmFnyeVo0MRIeoBXK3bMvDLM",
+                ApiKey = apiKey,
                 AuthDomain = "medicat-5ca75.firebaseapp.com",
                 Providers = new FirebaseAuthProvider[]
                 {

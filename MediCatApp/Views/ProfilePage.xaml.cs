@@ -26,9 +26,9 @@ namespace MediCatApp.Views
     public partial class ProfilePageViewModel : ObservableObject
     {
         private readonly FirebaseAuthClient _authClient;
-        public string Username => _authClient.User?.Info?.DisplayName;
-        public string Email => _authClient.User?.Info?.Email;
-        public string PhotoUrl => _authClient.User?.Info?.PhotoUrl;
+        public string? Username => _authClient.User?.Info?.DisplayName;
+        public string? Email => _authClient.User?.Info?.Email;
+        public string? PhotoUrl => _authClient.User?.Info?.PhotoUrl;
 
         public ProfilePageViewModel(FirebaseAuthClient authClient)
         {
@@ -44,6 +44,12 @@ namespace MediCatApp.Views
         private async Task NavigateEditProfile()
         {
             await Shell.Current.GoToAsync("//EditProfile");
+        }
+        [RelayCommand]
+        private async Task LogOut()
+        {
+            _authClient.SignOut();
+            Application.Current.Quit();
         }
     }
 }

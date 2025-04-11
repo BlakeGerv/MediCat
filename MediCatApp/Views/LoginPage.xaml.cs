@@ -86,6 +86,7 @@ namespace MediCatApp.Views
             {
                 await _authClient.SignInWithEmailAndPasswordAsync(Email, Password);
                 Email = Password = "";
+
                 await Shell.Current.GoToAsync("//Main");
             }
             catch (FirebaseAuthHttpException e)
@@ -105,6 +106,11 @@ namespace MediCatApp.Views
         {
             Email = Password = Emailcheck = Passwordcheck = Errormessage = "";
             await Shell.Current.GoToAsync("//SignUp");
+        }
+        [RelayCommand]
+        private async Task NavigateMain()
+        {
+            await Shell.Current.GoToAsync("//Main");
         }
     }
 }
