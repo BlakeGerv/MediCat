@@ -26,6 +26,7 @@ namespace MediCatApp.Views
         [RelayCommand]
         private async Task NavigateProfile()
         {
+            OnPropertyChanged(nameof(PhotoUrl));
             await Shell.Current.GoToAsync("//Profile");
         }
         [RelayCommand]

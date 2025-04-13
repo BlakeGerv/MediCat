@@ -54,7 +54,6 @@
                 </Image.Clip>
             </Image>
             <Label
-                Margin="0,-25,0,0"
                 Text="{Binding Username}"
                 TextColor="Black"
                 Style="{StaticResource Headline}"

@@ -38,11 +38,15 @@ namespace MediCatApp.Views
         [RelayCommand]
         private async Task NavigateMain()
         {
+            OnPropertyChanged(nameof(PhotoUrl));
+            OnPropertyChanged(nameof(Username));
             await Shell.Current.GoToAsync("//Main");
         }
         [RelayCommand]
         private async Task NavigateEditProfile()
         {
+            OnPropertyChanged(nameof(PhotoUrl));
+            OnPropertyChanged(nameof(Username));
             await Shell.Current.GoToAsync("//EditProfile");
         }
         [RelayCommand]

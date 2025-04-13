@@ -87,9 +87,9 @@ namespace MediCatApp.Views
                 Usernamecheck = "Missing Required Element";
                 hasError = true;
             }
-            else if (Username.Length < 6)
+            else if (Username.Length < 3)
             {
-                Usernamecheck = "Username should be at least 6 characters";
+                Usernamecheck = "Username should be at least 3 characters";
                 hasError = true;
             }
 
@@ -136,8 +136,9 @@ namespace MediCatApp.Views
                 await _authClient.CreateUserWithEmailAndPasswordAsync(Email, Password, Username);
                 try
                 {
-                    Random rand = new Random();
-                    _authClient.User.Info.PhotoUrl = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{rand.Next(650)}.png";
+                    //Random rand = new Random();
+                    //_authClient.User.Info.PhotoUrl = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{rand.Next(650)}.png";
+                    _authClient.User.Info.PhotoUrl = "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png";
 
                     var IdToken = await _authClient.User.GetIdTokenAsync();
 

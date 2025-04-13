@@ -47,11 +47,8 @@
                 WidthRequest="180"
                 Aspect="AspectFit">
                 <Image.Source>
-                    <UriImageSource Uri="{Binding PhotoUrl}" />
+                    <UriImageSource Uri="{Binding Newphotourl}" />
                 </Image.Source>
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding RefreshPhotoUrlCommand}" />
-                </Image.GestureRecognizers>
                 <Image.Clip>
                     <EllipseGeometry
                         Center="90,90"
@@ -59,12 +56,49 @@
                         RadiusY="90" />
                 </Image.Clip>
             </Image>
-            <Label
-                Margin="0,-25,0,0"
-                Text="{Binding Username}"
-                TextColor="Black"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+            <Grid Margin="50,10,50,-10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="PhotoUrl:"
+                    Margin="5,0,0,-5"
+                    TextColor="Black"
+                    FontSize="14"
+                    HorizontalOptions="Start"/>
+            </Grid>
+            <Border Stroke="DimGrey" Margin="50,0,50,10">
+                <Entry ReturnType="Next"
+                    Placeholder="{Binding PhotoUrl}"
+                    TextColor="Grey"
+                    Text="{Binding Newphotourl}"
+                    Margin="-5,-5,-5,-5"/>
+            </Border>
+            <Grid Margin="50,10,50,-10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Username:"
+                    Margin="5,0,0,-5"
+                    TextColor="Black"
+                    FontSize="14"
+                    HorizontalOptions="Start"/>
+                <Label Text="{Binding Usernamecheck}"
+                    Margin="0,0,0,-5"
+                    TextColor="Tomato"
+                    FontSize="14"
+                    Grid.Column="1"
+                    HorizontalOptions="End"/>
+            </Grid>
+            <Border Stroke="DimGrey" Margin="50,0,50,10">
+                <Entry ReturnType="Next"
+                    Placeholder="{Binding Username}"
+                    MaxLength="32"
+                    TextColor="Grey"
+                    Text="{Binding Newusername}"
+                    Margin="-5,-5,-5,-5"/>
+            </Border>
             <Border Stroke="WhiteSmoke" Margin="10,10,5,10">
                 <Grid>
                     <Grid.ColumnDefinitions>

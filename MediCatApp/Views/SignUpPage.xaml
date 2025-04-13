@@ -114,6 +114,7 @@
                     </Grid>
                     <Border Stroke="DimGrey" Margin="5,5,5,5">
                         <Entry x:Name="RePassword"
+                        ReturnType="Next"
                         MaxLength="32"
                         IsPassword="true"
                         TextColor="Grey"
