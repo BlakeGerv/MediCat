@@ -47,6 +47,18 @@
                 TextColor="Black"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <Button
+                Text="Read"
+                BackgroundColor="LightSteelBlue"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="24"
+                FontFamily="Verdana"
+                HeightRequest="50"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                Command="{Binding ReadFromWebserverCommand}"/>
+            <Label Text="{Binding Webserverdata}" TextColor="Black" FontSize="14"/>
         </VerticalStackLayout>
     </ScrollView>
 

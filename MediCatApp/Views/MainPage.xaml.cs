@@ -32,11 +32,13 @@ namespace MediCatApp.Views
         [RelayCommand]
         private async Task NavigateCatRobot()
         {
+            OnPropertyChanged(nameof(PhotoUrl));
             await Shell.Current.GoToAsync("//CatRobot");
         }
         [RelayCommand]
         private async Task NavigateWeightSensor()
         {
+            OnPropertyChanged(nameof(PhotoUrl));
             await Shell.Current.GoToAsync("//WeightSensor");
         }
     }

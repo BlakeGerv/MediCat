@@ -17,6 +17,8 @@ namespace MediCatApp.Views
     {
         private readonly FirebaseAuthClient _authClient;
         public string PhotoUrl => _authClient.User?.Info?.PhotoUrl;
+        [ObservableProperty]
+        private string _webserverdata;
 
         public WeightSensorPageViewModel(FirebaseAuthClient authClient)
         {
@@ -33,6 +35,17 @@ namespace MediCatApp.Views
         {
             OnPropertyChanged(nameof(PhotoUrl));
             await Shell.Current.GoToAsync("//Profile");
+        }
+        [RelayCommand]
+        private async Task<string> ReadFromWebserver()
+        {
+            using var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://192.168.129.213"); //splice for "Weight: " and " units"
+            response.EnsureSuccessStatusCode();
+
+            Webserverdata = await response.Content.ReadAsStringAsync();
+
+            return Webserverdata;
         }
     }
 }
