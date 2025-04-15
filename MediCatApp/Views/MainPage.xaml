@@ -38,11 +38,6 @@
                     </Image>
                 </Grid>
             </Border>
-            <Label
-                Text="Main Page"
-                TextColor="Black"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
             <Button
                 Text="Cat Robot"
                 BackgroundColor="LightSteelBlue"
@@ -65,6 +60,17 @@
                 WidthRequest="250"
                 HorizontalOptions="Center"
                 Command="{Binding NavigateWeightSensorCommand}"/>
+            <Button
+             Text="Weight Sensor"
+             BackgroundColor="LightSteelBlue"
+             TextColor="White"
+             FontAttributes="Bold"
+             FontSize="24"
+             FontFamily="Verdana"
+             HeightRequest="50"
+             WidthRequest="250"
+             HorizontalOptions="Center"
+             Command="{Binding NavigateWeightSensorCommand}"/>
         </VerticalStackLayout>
     </ScrollView>
 

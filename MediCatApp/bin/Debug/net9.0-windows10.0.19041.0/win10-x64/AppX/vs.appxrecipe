@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-14T19:11:26.014</Modified>
+      <Modified>2025-04-15T03:21:28.165</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MediCatApp.dll">
       <PackagePath>MediCatApp.dll</PackagePath>
-      <Modified>2025-04-14T19:11:22.057</Modified>
+      <Modified>2025-04-15T03:21:24.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MediCatApp.exe</PackagePath>
-      <Modified>2025-04-14T19:11:22.299</Modified>
+      <Modified>2025-04-15T03:21:24.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

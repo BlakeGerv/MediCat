@@ -4,28 +4,22 @@
     {
         public static void ButtonPressed(object sender, EventArgs e)
         {
-            if (sender is ImageButton imgbutton)
-            {
-                if (imgbutton.BackgroundColor == Color.FromArgb("#0e1111"))
-                    imgbutton.BackgroundColor = Color.FromArgb("#232b2b");
-            }
-            else if (sender is Button button)
+            if (sender is Button button)
             {
                 if (button.BackgroundColor == Colors.LightSteelBlue)
                     button.BackgroundColor = Colors.LightSlateGray;
+                else if (button.BackgroundColor == Colors.DimGrey)
+                    button.BackgroundColor = Colors.Black;
             }
         }
         public static void ButtonReleased(object sender, EventArgs e)
         {
-            if (sender is ImageButton imgbutton)
-            {
-                if (imgbutton.BackgroundColor == Color.FromArgb("#232b2b"))
-                    imgbutton.BackgroundColor = Color.FromArgb("#0e1111");
-            }
-            else if (sender is Button button)
+            if (sender is Button button)
             {
                 if (button.BackgroundColor == Colors.LightSlateGray)
                     button.BackgroundColor = Colors.LightSteelBlue;
+                else if (button.BackgroundColor == Colors.Black)
+                    button.BackgroundColor = Colors.DimGrey;
             }
         }
     }

@@ -42,23 +42,56 @@
                     </Image>
                 </Grid>
             </Border>
-            <Label
-                Text="Weight Sensor Page"
-                TextColor="Black"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-            <Button
-                Text="Read"
+            <Border Stroke="DimGrey" Margin="5,5,5,10">
+                <Entry ReturnType="Next"
+                    TextColor="Grey"
+                    Text="{Binding Webserverdata}"
+                    Margin="-5,-5,-5,-5"/>
+            </Border>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="You have " 
+                            TextColor="DimGrey"
+                            FontSize="20" />
+                        <Span Text="{Binding NumOfPills}" 
+                            TextColor="DimGrey"
+                            FontAttributes="Bold"
+                            FontSize="20"/>
+                        <Span Text=" pills." 
+                            TextColor="DimGrey"
+                            FontSize="20" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Margin="0,0,0,100"
+                Text="Refresh Pill Count"
                 BackgroundColor="LightSteelBlue"
                 TextColor="White"
                 FontAttributes="Bold"
-                FontSize="24"
+                FontSize="18"
                 FontFamily="Verdana"
-                HeightRequest="50"
                 WidthRequest="250"
                 HorizontalOptions="Center"
-                Command="{Binding ReadFromWebserverCommand}"/>
-            <Label Text="{Binding Webserverdata}" TextColor="Black" FontSize="14"/>
+                Command="{Binding RefreshPillCountCommand}"/>
+            <Border 
+                Stroke="DimGrey" BackgroundColor="Tan">
+                <VerticalStackLayout Spacing="5">
+                    <Button x:Name="CalibrateBtn"
+                        Margin="5,10"
+                        Text="{Binding Calibratebuttontext}"
+                        BackgroundColor="DimGrey"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        FontFamily="Verdana"
+                        WidthRequest="250"
+                        HorizontalOptions="Center"
+                        Command="{Binding CalibrateCommand}"/>
+                    <Label Text="{Binding Calibrationmessage}" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="5,10"/>
+                </VerticalStackLayout>
+            </Border>
+            <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="14" HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
