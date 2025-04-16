@@ -100,7 +100,7 @@ namespace MediCatApp.Views
         [RelayCommand]
         private async Task<double> GetWeightOnSensor()
         {
-            //await ReadFromWebserver();
+            await ReadFromWebserver();
 
             double WeightOnSensor = -1000;
 

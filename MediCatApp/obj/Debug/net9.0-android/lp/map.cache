@@ -182,3 +182,6 @@ Xamarin.KotlinX.Coroutines.Core.aar
 Xamarin.KotlinX.Coroutines.Core.Jvm.aar
 Xamarin.KotlinX.Serialization.Core.aar
 Xamarin.KotlinX.Serialization.Core.Jvm.aar
+Plugin.Maui.Biometric.dll
+Xamarin.AndroidX.Biometric.dll
+androidx.biometric.biometric.aar

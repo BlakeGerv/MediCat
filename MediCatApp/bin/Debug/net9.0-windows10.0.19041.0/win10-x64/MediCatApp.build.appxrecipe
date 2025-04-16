@@ -205,6 +205,21 @@
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\calico_cat_pattern.scale-100.jpeg">
       <PackagePath>calico_cat_pattern.scale-100.jpeg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_00a5ff.scale-100.png">
+      <PackagePath>cat_icon_00a5ff.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_6eff89.scale-100.png">
+      <PackagePath>cat_icon_6eff89.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_b66eff.scale-100.png">
+      <PackagePath>cat_icon_b66eff.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_ff3e3e.scale-100.png">
+      <PackagePath>cat_icon_ff3e3e.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_ff6ed3.scale-100.png">
+      <PackagePath>cat_icon_ff6ed3.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -225,6 +240,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\medicat_small_logo.scale-100.png">
       <PackagePath>medicat_small_logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_00a5ff.scale-100.png">
+      <PackagePath>pill_icon_00a5ff.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_6eff89.scale-100.png">
+      <PackagePath>pill_icon_6eff89.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_b66eff.scale-100.png">
+      <PackagePath>pill_icon_b66eff.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_ff3e3e.scale-100.png">
+      <PackagePath>pill_icon_ff3e3e.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_ff6ed3.scale-100.png">
+      <PackagePath>pill_icon_ff6ed3.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -348,6 +378,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\newtonsoft.json\13.0.2\lib\net6.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\plugin.maui.biometric\0.0.2\lib\net8.0\Plugin.Maui.Biometric.dll">
+      <PackagePath>Plugin.Maui.Biometric.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\system.reactive\4.0.0\lib\netstandard2.0\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>

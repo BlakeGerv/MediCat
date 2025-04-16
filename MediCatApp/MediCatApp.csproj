@@ -68,6 +68,7 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.50" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.50" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.4" />
+		<PackageReference Include="Plugin.Maui.Biometric" Version="0.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>

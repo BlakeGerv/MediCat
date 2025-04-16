@@ -15,6 +15,7 @@
           "Microsoft.Extensions.Logging.Debug": "9.0.4",
           "Microsoft.Maui.Controls": "9.0.50",
           "Microsoft.Maui.Controls.Compatibility": "9.0.50",
+          "Plugin.Maui.Biometric": "0.0.2",
           "Microsoft.Web.WebView2.Core.Projection": "1.0.2903.40",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.57"
         },
@@ -513,6 +514,14 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {
+            "assemblyVersion": "0.0.2.0",
+            "fileVersion": "0.0.2.0"
+          }
+        }
+      },
       "runtime.any.System.IO/4.3.0": {},
       "runtime.any.System.Reflection/4.3.0": {},
       "runtime.any.System.Reflection.Primitives/4.3.0": {},
@@ -847,6 +856,13 @@
       "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
       "path": "newtonsoft.json/13.0.2",
       "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
+    },
+    "Plugin.Maui.Biometric/0.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6L7y14JhhFFsDFEWkxjRM4swvLCnsypd7MStP+i59nEYRLun93K1m3IFtSMeCc3TAQ+3koMfM+gU1bNZ8FPPkA==",
+      "path": "plugin.maui.biometric/0.0.2",
+      "hashPath": "plugin.maui.biometric.0.0.2.nupkg.sha512"
     },
     "runtime.any.System.IO/4.3.0": {
       "type": "package",

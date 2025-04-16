@@ -38,39 +38,69 @@
                     </Image>
                 </Grid>
             </Border>
-            <Button
-                Text="Cat Robot"
-                BackgroundColor="LightSteelBlue"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontSize="24"
-                FontFamily="Verdana"
-                HeightRequest="50"
-                WidthRequest="250"
-                HorizontalOptions="Center"
-                Command="{Binding NavigateCatRobotCommand}"/>
-            <Button
-                Text="Weight Sensor"
-                BackgroundColor="LightSteelBlue"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontSize="24"
-                FontFamily="Verdana"
-                HeightRequest="50"
-                WidthRequest="250"
-                HorizontalOptions="Center"
-                Command="{Binding NavigateWeightSensorCommand}"/>
-            <Button
-             Text="Weight Sensor"
-             BackgroundColor="LightSteelBlue"
-             TextColor="White"
-             FontAttributes="Bold"
-             FontSize="24"
-             FontFamily="Verdana"
-             HeightRequest="50"
-             WidthRequest="250"
-             HorizontalOptions="Center"
-             Command="{Binding NavigateWeightSensorCommand}"/>
+            <Border Stroke="{Binding CatBorderColour}" Margin="40,0">
+                <VerticalStackLayout>
+                    <Border Stroke="{Binding CatBorderColour}" BackgroundColor="{Binding CatBorderColour}" Margin="-1">
+                        <Label Text="Cat Robot" TextColor="White" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center"/>
+                    </Border>
+                    <Border Stroke="{Binding CatBorderColour}" Margin="-1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <VerticalStackLayout>
+                                <Label Margin="10,5,5,0" Text="Cat Robot" TextColor="Black" FontSize="14" HorizontalOptions="Start"/>
+                                <Label Margin="10,0" Text="On" TextColor="Green" FontSize="14" HorizontalOptions="Start"/>
+                            </VerticalStackLayout>
+                            <Image Margin="5,0"
+                                    Source="{Binding CatIconSource}"
+                                    HeightRequest="60"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="End">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ChangeCatColourCommand}" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateCatRobotCommand}"/>
+                </Border.GestureRecognizers>
+            </Border>
+            <Border Stroke="{Binding PillBorderColour}" Margin="40,0">
+                <VerticalStackLayout>
+                    <Border Stroke="{Binding PillBorderColour}" BackgroundColor="{Binding PillBorderColour}" Margin="-1">
+                        <Label Text="Weight Sensor" TextColor="White" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center"/>
+                    </Border>
+                    <Border Stroke="{Binding PillBorderColour}" Margin="-1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <VerticalStackLayout>
+                                <Label Margin="10,5,5,0" Text="Weight Sensor" TextColor="Black" FontSize="14" HorizontalOptions="Start"/>
+                                <Label Margin="10,0" Text="On" TextColor="Green" FontSize="14" HorizontalOptions="Start"/>
+                            </VerticalStackLayout>
+                            <Image x:Name="CatImage"
+                                Margin="5,0"
+                                Source="{Binding PillIconSource}"
+                                HeightRequest="60"
+                                VerticalOptions="Center"
+                                HorizontalOptions="End">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ChangePillColourCommand}" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateWeightSensorCommand}" />
+                </Border.GestureRecognizers>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 

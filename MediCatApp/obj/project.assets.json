@@ -528,6 +528,23 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.18",
+          "Xamarin.AndroidX.Collection.Ktx": "1.3.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -840,6 +857,31 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Biometric/1.1.0.18": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.8.1.1",
+          "Xamarin.AndroidX.Annotation": "1.7.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.6.1.6",
+          "Xamarin.AndroidX.Core": "1.12.0.3",
+          "Xamarin.AndroidX.Fragment": "1.6.2.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.6.2.3",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.6.2.3"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets": {}
         }
       },
       "Xamarin.AndroidX.Browser/1.8.0.8": {
@@ -2990,6 +3032,23 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.18",
+          "Xamarin.AndroidX.Collection.Ktx": "1.3.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -3302,6 +3361,31 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Biometric/1.1.0.18": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.8.1.1",
+          "Xamarin.AndroidX.Annotation": "1.7.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.6.1.6",
+          "Xamarin.AndroidX.Core": "1.12.0.3",
+          "Xamarin.AndroidX.Fragment": "1.6.2.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.6.2.3",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.6.2.3"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets": {}
         }
       },
       "Xamarin.AndroidX.Browser/1.8.0.8": {
@@ -5452,6 +5536,23 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.18",
+          "Xamarin.AndroidX.Collection.Ktx": "1.3.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -5764,6 +5865,31 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Biometric/1.1.0.18": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.8.1.1",
+          "Xamarin.AndroidX.Annotation": "1.7.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.6.1.6",
+          "Xamarin.AndroidX.Core": "1.12.0.3",
+          "Xamarin.AndroidX.Fragment": "1.6.2.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.6.2.3",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.6.2.3"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets": {}
         }
       },
       "Xamarin.AndroidX.Browser/1.8.0.8": {
@@ -7914,6 +8040,23 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.18",
+          "Xamarin.AndroidX.Collection.Ktx": "1.3.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -8226,6 +8369,31 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Biometric/1.1.0.18": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.8.1.1",
+          "Xamarin.AndroidX.Annotation": "1.7.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.6.1.6",
+          "Xamarin.AndroidX.Core": "1.12.0.3",
+          "Xamarin.AndroidX.Fragment": "1.6.2.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.6.2.3",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.6.2.3"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets": {}
         }
       },
       "Xamarin.AndroidX.Browser/1.8.0.8": {
@@ -10376,6 +10544,23 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.18",
+          "Xamarin.AndroidX.Collection.Ktx": "1.3.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -10688,6 +10873,31 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Biometric/1.1.0.18": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.8.1.1",
+          "Xamarin.AndroidX.Annotation": "1.7.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.6.1.6",
+          "Xamarin.AndroidX.Core": "1.12.0.3",
+          "Xamarin.AndroidX.Fragment": "1.6.2.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.6.2.3",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.6.2.3"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets": {}
         }
       },
       "Xamarin.AndroidX.Browser/1.8.0.8": {
@@ -12838,6 +13048,23 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.18",
+          "Xamarin.AndroidX.Collection.Ktx": "1.3.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -13150,6 +13377,31 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Biometric/1.1.0.18": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.8.1.1",
+          "Xamarin.AndroidX.Annotation": "1.7.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.6.1.6",
+          "Xamarin.AndroidX.Core": "1.12.0.3",
+          "Xamarin.AndroidX.Fragment": "1.6.2.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.6.2.3",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.6.2.3"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets": {}
         }
       },
       "Xamarin.AndroidX.Browser/1.8.0.8": {
@@ -15291,6 +15543,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "System.IO/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -15934,6 +16195,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -16680,6 +16950,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -17422,6 +17701,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -18168,6 +18456,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -18912,6 +19209,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -19640,6 +19946,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "System.IO/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -20283,6 +20598,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -21029,6 +21353,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -21771,6 +22104,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -22517,6 +22859,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -23259,6 +23610,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -24199,6 +24559,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "System.IO/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -25010,6 +25379,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -25924,6 +26302,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -26836,6 +27223,15 @@
           }
         }
       },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        }
+      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -27746,6 +28142,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -28667,6 +29072,15 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Biometric/0.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Plugin.Maui.Biometric.dll": {}
         }
       },
       "runtime.any.System.IO/4.3.0": {
@@ -31005,6 +31419,23 @@
         "packageIcon.png"
       ]
     },
+    "Plugin.Maui.Biometric/0.0.2": {
+      "sha512": "6L7y14JhhFFsDFEWkxjRM4swvLCnsypd7MStP+i59nEYRLun93K1m3IFtSMeCc3TAQ+3koMfM+gU1bNZ8FPPkA==",
+      "type": "package",
+      "path": "plugin.maui.biometric/0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.md",
+        "auth_icon.jpg",
+        "lib/net8.0-android34.0/Plugin.Maui.Biometric.dll",
+        "lib/net8.0-android34.0/Plugin.Maui.Biometric.xml",
+        "lib/net8.0-ios17.2/Plugin.Maui.Biometric.dll",
+        "lib/net8.0/Plugin.Maui.Biometric.dll",
+        "plugin.maui.biometric.0.0.2.nupkg.sha512",
+        "plugin.maui.biometric.nuspec"
+      ]
+    },
     "runtime.any.System.IO/4.3.0": {
       "sha512": "SDZ5AD1DtyRoxYtEcqQ3HDlcrorMYXZeCt7ZhG9US9I5Vva+gpIWDGMkcwa5XiKL0ceQKRZIX2x0XEjLX7PDzQ==",
       "type": "package",
@@ -32100,6 +32531,38 @@
         "readme.md",
         "xamarin.androidx.arch.core.runtime.2.2.0.15.nupkg.sha512",
         "xamarin.androidx.arch.core.runtime.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Biometric/1.1.0.18": {
+      "sha512": "d+atvl1ti4ifqM1YVvG5NVF6QdWNk33lKc0/d1E5wfG5LXGoXxzL+821H1JLBo+TXJB/nXUxOXsLaFEqAnu4Qw==",
+      "type": "package",
+      "path": "xamarin.androidx.biometric/1.1.0.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "aar/androidx.biometric.biometric.aar",
+        "build/monoandroid12.0/Xamarin.AndroidX.Biometric.targets",
+        "build/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets",
+        "build/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.AndroidX.Biometric.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets",
+        "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Biometric.targets",
+        "icon.png",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Biometric.dll",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Biometric.pdb",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Biometric.xml",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.pdb",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.xml",
+        "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.dll",
+        "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.pdb",
+        "lib/net7.0-android33.0/Xamarin.AndroidX.Biometric.xml",
+        "proguard/proguard.txt",
+        "readme.md",
+        "xamarin.androidx.biometric.1.1.0.18.nupkg.sha512",
+        "xamarin.androidx.biometric.nuspec"
       ]
     },
     "Xamarin.AndroidX.Browser/1.8.0.8": {
@@ -33870,7 +34333,8 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.4",
       "Microsoft.Maui.Controls >= 9.0.50",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.50",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.3"
+      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
+      "Plugin.Maui.Biometric >= 0.0.2"
     ],
     "net9.0-ios18.2": [
       "CommunityToolkit.Mvvm >= 8.4.0",
@@ -33879,7 +34343,8 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.4",
       "Microsoft.Maui.Controls >= 9.0.50",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.50",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.3"
+      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
+      "Plugin.Maui.Biometric >= 0.0.2"
     ],
     "net9.0-maccatalyst18.2": [
       "CommunityToolkit.Mvvm >= 8.4.0",
@@ -33888,7 +34353,8 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.4",
       "Microsoft.Maui.Controls >= 9.0.50",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.50",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.3"
+      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
+      "Plugin.Maui.Biometric >= 0.0.2"
     ],
     "net9.0-windows10.0.19041": [
       "CommunityToolkit.Mvvm >= 8.4.0",
@@ -33896,7 +34362,8 @@
       "FirebaseDatabase.net >= 4.2.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.4",
       "Microsoft.Maui.Controls >= 9.0.50",
-      "Microsoft.Maui.Controls.Compatibility >= 9.0.50"
+      "Microsoft.Maui.Controls.Compatibility >= 9.0.50",
+      "Plugin.Maui.Biometric >= 0.0.2"
     ]
   },
   "packageFolders": {
@@ -33995,6 +34462,10 @@
             "target": "Package",
             "version": "[9.0.3, )",
             "autoReferenced": true
+          },
+          "Plugin.Maui.Biometric": {
+            "target": "Package",
+            "version": "[0.0.2, )"
           }
         },
         "imports": [
@@ -34050,6 +34521,10 @@
             "target": "Package",
             "version": "[9.0.3, )",
             "autoReferenced": true
+          },
+          "Plugin.Maui.Biometric": {
+            "target": "Package",
+            "version": "[0.0.2, )"
           }
         },
         "imports": [
@@ -34105,6 +34580,10 @@
             "target": "Package",
             "version": "[9.0.3, )",
             "autoReferenced": true
+          },
+          "Plugin.Maui.Biometric": {
+            "target": "Package",
+            "version": "[0.0.2, )"
           }
         },
         "imports": [
@@ -34155,6 +34634,10 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[9.0.50, )"
+          },
+          "Plugin.Maui.Biometric": {
+            "target": "Package",
+            "version": "[0.0.2, )"
           }
         },
         "imports": [

@@ -42,12 +42,12 @@
                     </Image>
                 </Grid>
             </Border>
-            <Border Stroke="DimGrey" Margin="5,5,5,10">
+            <!--<Border Stroke="DimGrey" Margin="5,5,5,10">
                 <Entry ReturnType="Next"
                     TextColor="Grey"
                     Text="{Binding Webserverdata}"
                     Margin="-5,-5,-5,-5"/>
-            </Border>
+            </Border>-->
             <Label HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
@@ -88,7 +88,7 @@
                         WidthRequest="250"
                         HorizontalOptions="Center"
                         Command="{Binding CalibrateCommand}"/>
-                    <Label Text="{Binding Calibrationmessage}" TextColor="White" FontSize="14" HorizontalOptions="Center" Margin="5,10"/>
+                    <Label Text="{Binding Calibrationmessage}" TextColor="White" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" Margin="5,10"/>
                 </VerticalStackLayout>
             </Border>
             <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="14" HorizontalOptions="Center"/>

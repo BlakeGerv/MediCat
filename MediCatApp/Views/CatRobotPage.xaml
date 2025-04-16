@@ -47,6 +47,17 @@
                 TextColor="Black"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <Button Margin="0,0,0,100"
+                Text="Command"
+                BackgroundColor="LightSteelBlue"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="18"
+                FontFamily="Verdana"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                Command="{Binding PostRequestCommand}"/>
+            <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="14" HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
