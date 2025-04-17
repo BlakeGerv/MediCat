@@ -235,6 +235,9 @@
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_pencil.scale-100.png">
+      <PackagePath>edit_pencil.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\medicat_full_logo.scale-100.png">
       <PackagePath>medicat_full_logo.scale-100.png</PackagePath>
     </AppxPackagedFile>

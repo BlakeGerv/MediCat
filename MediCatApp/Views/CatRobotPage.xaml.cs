@@ -24,20 +24,39 @@ namespace MediCatApp.Views
         private readonly FirebaseAuthClient _authClient;
         public string PhotoUrl => _authClient.User?.Info?.PhotoUrl;
 
+        [ObservableProperty]
+        public Color _catBorderColour;
+
+        [ObservableProperty]
+        public bool _catNameReadOnly;
+        [ObservableProperty]
+        public string _catName;
+
         public CatRobotPageViewModel(FirebaseAuthClient authClient)
         {
             _authClient = authClient;
+
+            CatBorderColour = Tools.CatBorderColour;
+            CatName = Tools.CatName;
+            CatNameReadOnly = true;
+        }
+        [RelayCommand]
+        private async Task ResetPage()
+        {
+            Errormessage = "";
+            OnPropertyChanged(nameof(PhotoUrl));
+            CatBorderColour = Tools.CatBorderColour;
         }
         [RelayCommand]
         private async Task NavigateMain()
         {
-            OnPropertyChanged(nameof(PhotoUrl));
+            ResetPage();
             await Shell.Current.GoToAsync("//Main");
         }
         [RelayCommand]
         private async Task NavigateProfile()
         {
-            OnPropertyChanged(nameof(PhotoUrl));
+            ResetPage();
             await Shell.Current.GoToAsync("//Profile");
         }
         [RelayCommand]
@@ -56,12 +75,23 @@ namespace MediCatApp.Views
                 var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
 
                 using var httpClient = new HttpClient();
-                var response = await httpClient.PostAsync($"http://10.112.244.126/command", content);
+                var response = await httpClient.PostAsync($"http://192.168.129.37:5000/command", content);
                 response.EnsureSuccessStatusCode();
             }
             catch (Exception e)
             {
                 Errormessage = e.Message;
+            }
+        }
+        [RelayCommand]
+        private async Task SetNameEdit()
+        {
+            if (CatNameReadOnly)
+                CatNameReadOnly = false;
+            else
+            {
+                CatNameReadOnly = true;
+                Tools.CatName = CatName;
             }
         }
     }

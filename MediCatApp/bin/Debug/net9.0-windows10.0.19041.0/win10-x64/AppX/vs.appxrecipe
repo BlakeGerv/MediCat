@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-16T06:04:06.854</Modified>
+      <Modified>2025-04-17T00:41:36.339</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-16T05:27:43.187</Modified>
+      <Modified>2025-04-16T17:08:44.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MediCatApp.runtimeconfig.json">
       <PackagePath>MediCatApp.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MediCatApp.dll">
       <PackagePath>MediCatApp.dll</PackagePath>
-      <Modified>2025-04-16T06:04:03.477</Modified>
+      <Modified>2025-04-17T00:41:34.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MediCatApp.exe</PackagePath>
-      <Modified>2025-04-16T06:04:03.690</Modified>
+      <Modified>2025-04-17T00:41:34.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -84,263 +84,267 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-04-16T05:26:59.164</Modified>
+      <Modified>2025-04-16T16:56:59.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.121</Modified>
+      <Modified>2025-04-16T16:56:59.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.120</Modified>
+      <Modified>2025-04-16T16:56:59.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.120</Modified>
+      <Modified>2025-04-16T16:56:59.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.118</Modified>
+      <Modified>2025-04-16T16:56:59.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.117</Modified>
+      <Modified>2025-04-16T16:56:59.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.147</Modified>
+      <Modified>2025-04-16T16:56:59.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.145</Modified>
+      <Modified>2025-04-16T16:56:59.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.142</Modified>
+      <Modified>2025-04-16T16:56:59.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.144</Modified>
+      <Modified>2025-04-16T16:56:59.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.143</Modified>
+      <Modified>2025-04-16T16:56:59.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.153</Modified>
+      <Modified>2025-04-16T16:56:59.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.152</Modified>
+      <Modified>2025-04-16T16:56:59.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.148</Modified>
+      <Modified>2025-04-16T16:56:59.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.151</Modified>
+      <Modified>2025-04-16T16:56:59.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.149</Modified>
+      <Modified>2025-04-16T16:56:59.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.163</Modified>
+      <Modified>2025-04-16T16:56:59.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.162</Modified>
+      <Modified>2025-04-16T16:56:59.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.161</Modified>
+      <Modified>2025-04-16T16:56:59.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.160</Modified>
+      <Modified>2025-04-16T16:56:59.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.159</Modified>
+      <Modified>2025-04-16T16:56:59.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.158</Modified>
+      <Modified>2025-04-16T16:56:59.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.157</Modified>
+      <Modified>2025-04-16T16:56:59.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.154</Modified>
+      <Modified>2025-04-16T16:56:59.077</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.156</Modified>
+      <Modified>2025-04-16T16:56:59.079</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.155</Modified>
+      <Modified>2025-04-16T16:56:59.077</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.131</Modified>
+      <Modified>2025-04-16T16:56:59.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.131</Modified>
+      <Modified>2025-04-16T16:56:59.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.130</Modified>
+      <Modified>2025-04-16T16:56:59.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.129</Modified>
+      <Modified>2025-04-16T16:56:59.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.128</Modified>
+      <Modified>2025-04-16T16:56:59.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.136</Modified>
+      <Modified>2025-04-16T16:56:59.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.135</Modified>
+      <Modified>2025-04-16T16:56:59.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.134</Modified>
+      <Modified>2025-04-16T16:56:59.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.133</Modified>
+      <Modified>2025-04-16T16:56:59.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.132</Modified>
+      <Modified>2025-04-16T16:56:59.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.141</Modified>
+      <Modified>2025-04-16T16:56:59.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.140</Modified>
+      <Modified>2025-04-16T16:56:59.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.138</Modified>
+      <Modified>2025-04-16T16:56:59.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.138</Modified>
+      <Modified>2025-04-16T16:56:59.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.137</Modified>
+      <Modified>2025-04-16T16:56:59.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.127</Modified>
+      <Modified>2025-04-16T16:56:59.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.125</Modified>
+      <Modified>2025-04-16T16:56:59.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.124</Modified>
+      <Modified>2025-04-16T16:56:59.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.123</Modified>
+      <Modified>2025-04-16T16:56:59.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.122</Modified>
+      <Modified>2025-04-16T16:56:59.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\blank_profile_picture.scale-100.png">
       <PackagePath>blank_profile_picture.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.173</Modified>
+      <Modified>2025-04-16T16:56:59.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\calico_cat_pattern.scale-100.jpeg">
       <PackagePath>calico_cat_pattern.scale-100.jpeg</PackagePath>
-      <Modified>2025-04-16T05:26:59.112</Modified>
+      <Modified>2025-04-16T16:56:59.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_00a5ff.scale-100.png">
       <PackagePath>cat_icon_00a5ff.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.172</Modified>
+      <Modified>2025-04-16T16:56:59.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_6eff89.scale-100.png">
       <PackagePath>cat_icon_6eff89.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.168</Modified>
+      <Modified>2025-04-16T16:56:59.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_b66eff.scale-100.png">
       <PackagePath>cat_icon_b66eff.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.114</Modified>
+      <Modified>2025-04-16T16:56:59.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_ff3e3e.scale-100.png">
       <PackagePath>cat_icon_ff3e3e.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.169</Modified>
+      <Modified>2025-04-16T16:56:59.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cat_icon_ff6ed3.scale-100.png">
       <PackagePath>cat_icon_ff6ed3.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.116</Modified>
+      <Modified>2025-04-16T16:56:59.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.179</Modified>
+      <Modified>2025-04-16T16:56:59.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.178</Modified>
+      <Modified>2025-04-16T16:56:59.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.177</Modified>
+      <Modified>2025-04-16T16:56:59.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.176</Modified>
+      <Modified>2025-04-16T16:56:59.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.175</Modified>
+      <Modified>2025-04-16T16:56:59.088</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_pencil.scale-100.png">
+      <PackagePath>edit_pencil.scale-100.png</PackagePath>
+      <Modified>2025-04-16T16:56:59.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\medicat_full_logo.scale-100.png">
       <PackagePath>medicat_full_logo.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.171</Modified>
+      <Modified>2025-04-16T16:56:59.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\medicat_small_logo.scale-100.png">
       <PackagePath>medicat_small_logo.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.170</Modified>
+      <Modified>2025-04-16T16:56:59.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_00a5ff.scale-100.png">
       <PackagePath>pill_icon_00a5ff.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.166</Modified>
+      <Modified>2025-04-16T16:56:59.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_6eff89.scale-100.png">
       <PackagePath>pill_icon_6eff89.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.165</Modified>
+      <Modified>2025-04-16T16:56:59.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_b66eff.scale-100.png">
       <PackagePath>pill_icon_b66eff.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.109</Modified>
+      <Modified>2025-04-16T16:56:59.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_ff3e3e.scale-100.png">
       <PackagePath>pill_icon_ff3e3e.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.113</Modified>
+      <Modified>2025-04-16T16:56:59.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\Source\Repos\MediCat\MediCatApp\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pill_icon_ff6ed3.scale-100.png">
       <PackagePath>pill_icon_ff6ed3.scale-100.png</PackagePath>
-      <Modified>2025-04-16T05:26:59.115</Modified>
+      <Modified>2025-04-16T16:56:59.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Brayden\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

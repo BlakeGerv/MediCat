@@ -12,9 +12,15 @@ namespace MediCatApp.Views
 
             // Attach event handlers from Tools
             if (Tools.ButtonPressed != null)
+            {
                 CalibrateBtn.Pressed += Tools.ButtonPressed;
+                RefreshCountBtn.Pressed += Tools.ButtonPressed;
+            }
             if (Tools.ButtonReleased != null)
+            {
                 CalibrateBtn.Released += Tools.ButtonReleased;
+                RefreshCountBtn.Released += Tools.ButtonReleased;
+            }
 
             BindingContext = viewModel;
         }
@@ -27,6 +33,14 @@ namespace MediCatApp.Views
         private string _webserverdata;
         [ObservableProperty]
         private int _numOfPills;
+
+        [ObservableProperty]
+        public Color _pillBorderColour;
+
+        [ObservableProperty]
+        public bool _pillNameReadOnly;
+        [ObservableProperty]
+        public string _pillName;
 
         //Labels Text as variables
         [ObservableProperty]
@@ -44,6 +58,8 @@ namespace MediCatApp.Views
         [ObservableProperty]
         private double _weightOfPills;
         [ObservableProperty]
+        private double _weightOnTheSensor;
+        [ObservableProperty]
         private int _calibrationStage;
 
         public WeightSensorPageViewModel(FirebaseAuthClient authClient)
@@ -57,6 +73,10 @@ namespace MediCatApp.Views
             WeightOfPills = 0;
 
             Webserverdata = "<html>[...]Weight: 0 units[...]</html>";
+
+            PillBorderColour = Tools.PillBorderColour;
+            PillName = Tools.PillName;
+            PillNameReadOnly = true;
         }
         [RelayCommand]
         private async Task ResetPage()
@@ -66,6 +86,7 @@ namespace MediCatApp.Views
             Calibrationmessage = "";
             Errormessage = "";
             OnPropertyChanged(nameof(PhotoUrl));
+            PillBorderColour = Tools.PillBorderColour;
         }
         [RelayCommand]
         private async Task NavigateMain()
@@ -118,6 +139,7 @@ namespace MediCatApp.Views
             else
                 Errormessage = "Tags not found.";
 
+            WeightOnTheSensor = WeightOnSensor;
             return WeightOnSensor;
         }
         [RelayCommand]
@@ -139,13 +161,13 @@ namespace MediCatApp.Views
                     WeightOfPills = 0;
                 }
                 else
-                    WeightOfPills += await GetWeightOnSensor();
+                    WeightOfPills += await GetWeightOnSensor() - WeightOfBottle;
                 CalibrationStage++;
             }
             else if (CalibrationStage == 4)
             {
                 WeightOfPills += await GetWeightOnSensor();
-                WeightOfPills = (WeightOfPills - (WeightOfBottle * 3)) / 6;
+                WeightOfPills = WeightOfPills / 3;
 
                 Calibratebuttontext = "Calibration Complete";
                 Calibrationmessage = "";
@@ -175,6 +197,17 @@ namespace MediCatApp.Views
             NumOfPills = (int)Math.Round((WeightOnSensor - WeightOfBottle) / WeightOfPills);
 
             return NumOfPills;
+        }
+        [RelayCommand]
+        private async Task SetNameEdit()
+        {
+            if (PillNameReadOnly)
+                PillNameReadOnly = false;
+            else
+            {
+                PillNameReadOnly = true;
+                Tools.PillName = PillName;
+            }
         }
     }
 }

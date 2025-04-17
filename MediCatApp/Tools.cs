@@ -1,7 +1,14 @@
-﻿namespace MediCatApp
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace MediCatApp
 {
     public static class Tools
     {
+        public static Color? CatBorderColour;
+        public static Color? PillBorderColour;
+        public static string? CatName;
+        public static string? PillName;
+
         public static void ButtonPressed(object sender, EventArgs e)
         {
             if (sender is Button button)

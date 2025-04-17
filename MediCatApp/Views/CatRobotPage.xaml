@@ -42,11 +42,24 @@
                     </Image>
                 </Grid>
             </Border>
-            <Label
-                Text="Cat Robot Page"
-                TextColor="Black"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+            <Border Stroke="{Binding CatBorderColour}" BackgroundColor="{Binding CatBorderColour}" Margin="-10">
+                <Grid HorizontalOptions="Center">
+                    <HorizontalStackLayout>
+                        <Entry Margin="30,0,0,0" Text="{Binding CatName}" TextColor="White" FontAttributes="Bold" 
+                           FontSize="18" HorizontalOptions="Center" IsReadOnly="{Binding CatNameReadOnly}"
+                           ReturnCommand="{Binding SetNameEditCommand}" />
+                        <Image Margin="5,0"
+                            Source="edit_pencil.png"
+                            WidthRequest="30"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetNameEditCommand}" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Border>
             <Button Margin="0,0,0,100"
                 Text="Command"
                 BackgroundColor="LightSteelBlue"

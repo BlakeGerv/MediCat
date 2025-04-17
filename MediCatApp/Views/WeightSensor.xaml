@@ -42,6 +42,24 @@
                     </Image>
                 </Grid>
             </Border>
+            <Border Stroke="{Binding PillBorderColour}" BackgroundColor="{Binding PillBorderColour}" Margin="-10">
+                <Grid HorizontalOptions="Center">
+                    <HorizontalStackLayout>
+                        <Entry Margin="30,0,0,0" Text="{Binding PillName}" TextColor="White" FontAttributes="Bold" 
+                               FontSize="18" HorizontalOptions="Center" IsReadOnly="{Binding PillNameReadOnly}"
+                               ReturnCommand="{Binding SetNameEditCommand}" />
+                        <Image Margin="5,0"
+                            Source="edit_pencil.png"
+                            WidthRequest="30"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetNameEditCommand}" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Border>
             <!--<Border Stroke="DimGrey" Margin="5,5,5,10">
                 <Entry ReturnType="Next"
                     TextColor="Grey"
@@ -64,7 +82,8 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-            <Button Margin="0,0,0,100"
+            <Button x:Name="RefreshCountBtn"
+                Margin="0,0,0,100"
                 Text="Refresh Pill Count"
                 BackgroundColor="LightSteelBlue"
                 TextColor="White"
@@ -75,7 +94,7 @@
                 HorizontalOptions="Center"
                 Command="{Binding RefreshPillCountCommand}"/>
             <Border 
-                Stroke="DimGrey" BackgroundColor="Tan">
+                Stroke="{Binding PillBorderColour}" BackgroundColor="{Binding PillBorderColour}">
                 <VerticalStackLayout Spacing="5">
                     <Button x:Name="CalibrateBtn"
                         Margin="5,10"
@@ -92,6 +111,54 @@
                 </VerticalStackLayout>
             </Border>
             <Label Text="{Binding Errormessage}" TextColor="Tomato" FontSize="14" HorizontalOptions="Center"/>
+            <!--
+            <Border Stroke="WhiteSmoke" Margin="-10" BackgroundColor="WhiteSmoke" HorizontalOptions="Center">
+                <VerticalStackLayout>
+                    <Border Stroke="DarkGrey" Margin="0" BackgroundColor="DarkGrey" HorizontalOptions="Center">
+                        <Grid HorizontalOptions="Center">
+                            <HorizontalStackLayout>
+                                <Border Stroke="DarkGrey" BackgroundColor="WhiteSmoke" Margin="0" HorizontalOptions="Center">
+                                    <Label Margin="30,0" Text="Weight of Bottle" TextColor="DimGrey" FontAttributes="Bold" 
+                                        FontSize="14" HorizontalOptions="Start" />
+                                </Border>
+                                <Border Stroke="DarkGrey" BackgroundColor="WhiteSmoke" Margin="0" HorizontalOptions="Center">
+                                    <Label Margin="30,0" Text="{Binding WeightOfBottle}" TextColor="DimGrey" FontAttributes="Bold" 
+                                        FontSize="14" HorizontalOptions="End" />
+                                </Border>
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Border>
+                    <Border Stroke="DarkGrey" Margin="0" BackgroundColor="DarkGrey" HorizontalOptions="Center">
+                        <Grid HorizontalOptions="Center">
+                            <HorizontalStackLayout>
+                                <Border Stroke="DarkGrey" BackgroundColor="WhiteSmoke" Margin="0" HorizontalOptions="Center">
+                                    <Label Margin="30,0" Text="WeightOfPills" TextColor="DimGrey" FontAttributes="Bold" 
+                                    FontSize="14" HorizontalOptions="Start" />
+                                </Border>
+                                <Border Stroke="DarkGrey" BackgroundColor="WhiteSmoke" Margin="0" HorizontalOptions="Center">
+                                    <Label Margin="30,0" Text="{Binding WeightOfPills}" TextColor="DimGrey" FontAttributes="Bold" 
+                                    FontSize="14" HorizontalOptions="End" />
+                                </Border>
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Border>
+                    <Border Stroke="DarkGrey" Margin="0" BackgroundColor="DarkGrey" HorizontalOptions="Center">
+                        <Grid HorizontalOptions="Center">
+                            <HorizontalStackLayout>
+                                <Border Stroke="DarkGrey" BackgroundColor="WhiteSmoke" Margin="0" HorizontalOptions="Center">
+                                    <Label Margin="30,0" Text="Weight on Sensor" TextColor="DimGrey" FontAttributes="Bold" 
+                                        FontSize="14" HorizontalOptions="Start" />
+                                </Border>
+                                <Border Stroke="DarkGrey" BackgroundColor="WhiteSmoke" Margin="0" HorizontalOptions="Center">
+                                    <Label Margin="30,0" Text="{Binding WeightOnTheSensor}" TextColor="DimGrey" FontAttributes="Bold" 
+                                        FontSize="14" HorizontalOptions="End" />
+                                </Border>
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+            -->
         </VerticalStackLayout>
     </ScrollView>
 
